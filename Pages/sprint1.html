@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deliverables Correttore</title>
+  <link rel="icon" type="image/x-icon" href="../Assets/favicon.ico">
+
+  <link rel="stylesheet" href="../style.css">
+  <script  src="../scripts/functionInCommon.js"></script>  
+<meta charset="UTF-8" />
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="../Assets/sg_logo.png" alt="LOGO"></div>
+  </header>    
+  
+    <div class="column">
+      <div class="blockText">
+        <h1 class="titoloDeliverable">Sprint 1</h1>
+        
+            <form id="myForm">
+              <input type="button" onclick="correggi()" value="Correggi" class="btn">   
+
+            
+          <input type="button" onclick="reload()" value="Pulisci" class="btn" style="background-color: white; color: #094074;margin-left: 40px">
+            <br><br>
+            <div class="divToScroll divWithScroll">
+                <h2 class="titoloDeliverable">Generale</h2> 
+                  <label for="fname">Nome partecipante</label><br>
+                  <input type="text" id="name" name="name" class="name" style="border-color: #094074 red #094074 red;"><br><br>
+                  
+                  
+                  <fieldset style="border-color: #094074 red #094074 red;">
+                    <legend>Selezionare se team singolo</legend>
+                    <table>
+                      <tr>
+                        <td><input type="radio" name="dimensioni_team" value="singolare" checked/></td>
+                        <td><span style="padding-left: 5%;">Plurale</span> </td>
+                      </tr>
+                  
+                    <tr>
+                      <td><input type="radio" name="dimensioni_team" value="plurale"/></td>
+                      <td style="padding-left: 5%;">Singolare </td>
+                    </tr>
+                  </table>
+                  </fieldset>
+                  
+                  <br>
+                  <fieldset style="border-color: #094074 red #094074 red;">
+                    <legend>Selezionare se mentor (paccheto Standard o plus) </legend>
+                    <table>
+                      <tr>
+                        <td> <input type="radio" name="mentor" value="no" checked/> <br></td>
+                        <td style="padding-left: 5%; vertical-align: top;"> Si</td>
+                      </tr>
+
+                      <tr>
+                        <td><input type="radio" name="mentor" value="si"/>  </td>
+                        <td><span style="padding-left: 5%;vertical-align: top;">No</span> </td>
+                      </tr>
+                      
+                    </table>          
+                    <!-- non so perchè devo mettere invertiti Si e No -->
+                  </fieldset>
+                <br>
+
+                <h2 class="titoloDeliverable">Javelin Board</h2>  
+                <div id="javelinBoardInput"></div>
+              
+                <script>
+                    var gal = document.getElementById('javelinBoardInput');
+                    for (var i = 1; i <= 18 ; i++) {
+                        gal.innerHTML += '<div class="checkbox_container" data-namecomponent="JavelinBoard'+i+'" style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_JB'+i+'""></span></label><br><br>';
+                        //gal.innerHTML += "ciao";
+                      };
+                </script>
+
+                <!--
+                <div class="checkbox_container" data-namecomponent="JavelinBoard1" style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_JB1"></span></label><br><br>
+                <div class="checkbox_container" data-namecomponent="JavelinBoard2"  style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_JB2"></span></label><br><br>
+                <div class="checkbox_container" data-namecomponent="JavelinBoard3"  style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_JB3"></span></label><br><br>
+                <div class="checkbox_container" data-namecomponent="JavelinBoard4"  style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_JB4"></span></label><br><br>
+                <div class="checkbox_container" data-namecomponent="JavelinBoard5"  style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_JB5"></span></label><br><br>
+                <div class="checkbox_container" data-namecomponent="JavelinBoard6" style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_JB6"></span></label><br><br>
+                <div class="checkbox_container" data-namecomponent="JavelinBoard7" style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_JB7"></span></label><br><br>
+                <div class="checkbox_container" data-namecomponent="JavelinBoard8"  style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_JB8"></span></label><br><br>
+                <div class="checkbox_container" data-namecomponent="JavelinBoard9"  style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_JB9"></span></label><br><br>
+                <div class="checkbox_container" data-namecomponent="JavelinBoard10"  style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_JB10"></span></label><br><br>
+                <div class="checkbox_container" data-namecomponent="JavelinBoard11"  style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_JB11"></span></label><br><br>
+                <div class="checkbox_container" data-namecomponent="JavelinBoard12" style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_JB12"></span></label><br><br>
+                <div class="checkbox_container" data-namecomponent="JavelinBoard13" style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_JB13"></span></label><br><br>    
+                <div class="checkbox_container" data-namecomponent="JavelinBoard14"  style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_JB14"></span></label><br><br>
+                <div class="checkbox_container" data-namecomponent="JavelinBoard15"  style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_JB15"></span></label><br><br>
+                <div class="checkbox_container" data-namecomponent="JavelinBoard16"  style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_JB16"></span></label><br><br>
+                <div class="checkbox_container" data-namecomponent="JavelinBoard17"  style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_JB17"></span></label><br><br>
+                <div class="checkbox_container" data-namecomponent="JavelinBoard18" style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_JB18"></span></label><br><br>
+                -->
+              
+                <label for="Commento_personalizzato_jb">Ulteriore commento personalizzato sulla Javelin Board</label><br>
+                <textarea name="Commento_personalizzato_jb" name="Commento_personalizzato_jb" class="Commento_personalizzato_jb" cols="40" rows="5" style="border-width: medium ;border-color: #094074 red #094074 red;background-color: #d3fffedb;"></textarea>
+                
+                <h2 class="titoloDeliverable">Buyer personas</h2> 
+                <div id="buyerPersonasInput"></div>
+                <script> addCheckboxes("BuyerPersonas","BP","buyerPersonasInput",6);</script>
+
+                <!--<div class="checkbox_container" data-namecomponent="BuyerPersonas1" style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_BP1"></span></label><br><br>
+                <div class="checkbox_container" data-namecomponent="BuyerPersonas2"  style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_BP2"></span></label><br><br>
+                <div class="checkbox_container" data-namecomponent="BuyerPersonas3"  style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_BP3"></span></label><br><br>
+                -->
+
+                <label for="Commento_personalizzato_bp">Ulteriore commento personalizzato sulle buyer personas</label><br>
+                <textarea name="Commento_personalizzato_bp" name="Commento_personalizzato_bp" class="Commento_personalizzato_bp" cols="40" rows="5" style="border-width: medium ;border-color: #094074 red #094074 red;background-color: #d3fffedb;"></textarea>
+              
+                <h2 class="titoloDeliverable">Account strategy</h2> 
+                <div class="checkbox_container" data-namecomponent="AccountStrategy1" style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_AS1"></span></label><br><br>
+                <div class="checkbox_container" data-namecomponent="AccountStrategy2"  style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_AS2"></span></label><br><br>
+                <div class="checkbox_container" data-namecomponent="AccountStrategy3"  style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_AS3"></span></label><br><br>
+                <div class="checkbox_container" data-namecomponent="AccountStrategy4"  style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_AS4"></span></label><br><br>
+                <label for="Commento_personalizzato_as">Ulteriore commento personalizzato su Account Strategy</label><br>
+                <textarea name="Commento_personalizzato_as" name="Commento_personalizzato_as" class="Commento_personalizzato_as" cols="40" rows="5" style="border-width: medium ;border-color: #094074 red #094074 red;background-color: #d3fffedb;"></textarea>
+
+                <h2 class="titoloDeliverable">Interviste e questionari</h2> 
+                <div id="interviewAndQuestionnaireInput"></div>
+                <script> addCheckboxes("InterviewQuestionnaire","IQ","interviewAndQuestionnaireInput",23);</script>
+                
+                <label for="Commento_personalizzato_iq">Ulteriore commento personalizzato su interviste e/o questionari</label><br>
+                <textarea name="Commento_personalizzato_iq" name="Commento_personalizzato_iq" class="Commento_personalizzato_iq" cols="40" rows="5" style="border-width: medium ;border-color: #094074 red #094074 red;background-color: #d3fffedb;"></textarea>
+
+                <h2 class="titoloDeliverable">Cold message</h2> 
+                <div class="checkbox_container" data-namecomponent="ColdMessage1" style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_CM1"></span></label><br><br>
+                <div class="checkbox_container" data-namecomponent="ColdMessage2"  style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_CM2"></span></label><br><br>
+                <div class="checkbox_container" data-namecomponent="ColdMessage3"  style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_CM3"></span></label><br><br>
+                <div class="checkbox_container" data-namecomponent="ColdMessage4"  style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_CM4"></span></label><br><br>
+                <div class="checkbox_container" data-namecomponent="ColdMessage5"  style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_CM5"></span></label><br><br>
+                <label for="Commento_personalizzato_cm">Ulteriore commento personalizzato su Messaggio a freddo</label><br>
+                <textarea name="Commento_personalizzato_cm" name="Commento_personalizzato_cm" class="Commento_personalizzato_cm" cols="40" rows="5" style="border-width: medium ;border-color: #094074 red #094074 red;background-color: #d3fffedb;"></textarea>
+                  
+                <h2 class="titoloDeliverable">Valutazione</h2> 
+                <fieldset style="border-color: #094074 red #094074 red;">
+                  <legend>Valutazione</legend>
+                  <table>
+                    <tr>
+                      <td> <input type="radio" name="valutazione" value="bad" /> <br></td>
+                      <td style="vertical-align: top;"><span style="padding-left: 5%">Negativo</span></td>
+                    </tr>
+                    <tr>
+                      <td><input type="radio" name="valutazione" value="medium" checked/> <br></td>
+                      <td style="vertical-align: top;"><span style="padding-left: 5%;white-space: nowrap;">Così così</span></td>
+                    </tr>
+                    <tr>
+                      <td><input type="radio" name="valutazione" value="good"/></td>
+                      <td style="vertical-align: top;"><span style="padding-left: 5%;">Positivo</span></td>
+                    </tr>
+                  </table>
+                </fieldset>
+            <br> <br>
+            <input type="button" onclick="correggi()" value="Correggi" class="btn">  
+            <br> <br>
+            
+              </div>
+    </form>
+      </div>
+    </div>
+  
+    <!-- OUTCOME -->
+    <div class="column">
+      <div class="blockText outcome">
+        <h1 class="titoloDeliverable">Feedback</h1>
+        
+          <button type="button" onclick="copyEvent('copy')" class="btn">Copia</button> 
+
+          <br><br><br>
+          <div id="copy" class="text-outcome" contenteditable="true">
+          
+            Ciao <span id="NOME"></span>,<br>
+
+            <p id="intro_pt1"></p>
+            <p id="intro_pt2"></p>
+            
+            <b id="Title_jb"></b>
+            <div id="javelinBoardOutcomes"></div>
+            <script>addOutcomes("JB","javelinBoardOutcomes",18);</script>
+            <p id="Commento_personalizzato_jb"></p>
+            
+            <b id="Title_bp"></b>
+            <p id="BP1"></p>
+            <p id="BP2"></p>
+            <p id="BP3"></p>
+            <p id="BP4"></p>
+            <p id="BP5"></p>
+            <p id="BP6"></p>
+            <p id="Commento_personalizzato_bp"></p>
+            
+            <b id="Title_as"></b>
+            <p id="AS1"></p>
+            <p id="AS2"></p>
+            <p id="AS3"></p>
+            <p id="AS4"></p>
+            <p id="Commento_personalizzato_as"></p>
+            
+            <b id="Title_iq"></b>
+            <div id="interviewQuestionnaireOutcomes"></div>
+            <script>addOutcomes("IQ","interviewQuestionnaireOutcomes",23);</script>
+            <p id="Commento_personalizzato_iq"></p>
+
+            <b id="Title_cm"></b>
+            <p id="CM1"></p>
+            <p id="CM2"></p>
+            <p id="CM3"></p>
+            <p id="CM4"></p>
+            <p id="CM5"></p>
+            <p id="Commento_personalizzato_cm"></p>
+            <br><br>
+            <p id="end"></p>
+          </div>  
+          <br><br>
+        <button type="button" onclick="copyEvent('copy')" class="btn">Copia</button> 
+       </div> 
+      </div>
+</body>
+
+
+<!--
+  #FOR DEVELOPMENT -->
+
+<!--
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+-->
+
+<!--  #FOR PRODUCTION -->
+<script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+
+<!-- Load our React components. -->
+<script src="../Components/checkbox.js"></script>
+<script  src="../scripts/sprint1.js"></script>
+
+</html>
