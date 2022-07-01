@@ -19,4 +19,6 @@ function addCheckboxes(nameReactComponent, idInputName,nameDiv,numberOfCheckboxe
       } 
     }
 
+
+    
   

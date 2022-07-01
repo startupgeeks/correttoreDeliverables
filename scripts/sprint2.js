@@ -125,7 +125,8 @@ function correggi() {
             document.getElementById("end").innerHTML = "Avete davvero eccelso in questo sprint, siete stati molto esaustivi e dettagliati. Dal prossimo sprint vi concentrerete a 360* sulla vostra soluzione e realizzarete il primo smoke test per raccogliere le prime metriche. In bocca al lupo, non vedo l'ora di vedere il vostro progetto concretizzarsi.";
         }
     }
-
+     //COPIA
+     copyEvent('copy');
 }
 
 function addOutcome(nameSection,idSection, listSection,title,isSingolare){
@@ -168,4 +169,12 @@ function addTextIntoFeedback(sel,idFeedbackBefore,idFeedbackAfter){
 function pulisciOutcome(){
 
 
+}
+
+
+function copyEvent(id) {
+    var str = document.getElementById(id);
+    window.getSelection().selectAllChildren(str);
+    //navigator.clipboard.writeText(str) //Questo copia [object HTMLDivElement]
+    document.execCommand("Copy") //DEPRECIATED but https://stackoverflow.com/questions/60581285/execcommand-is-now-obsolete-whats-the-alternative
 }
