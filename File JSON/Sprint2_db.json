@@ -6,7 +6,7 @@
             "outputPlulare": "Vi consiglio di specificate sempre il numero di interviste e questionari che sono stati raccolti. I risultati che avete ottenuto sono rilevanti se il numero di interviste e questionari raccolti sono in linea con quanto inserito nella Javelin Board."                                                                 
         },
         "gob2": {
-            "input": "Meno di 100 riposte al questionario e 30 interviste",
+            "input": "Meno di 100 riposte al questionario e 20 interviste",
             "outputSingolare": "La soglia che consigliamo da raggiungere per considerare il fit problema-mercato tramite la diffusione di questionari e interviste è di almeno 100 risposte ai questionari per il B2C e 20 interviste B2B. Continua a raccogliere risposte per fare poi un'analisi su un campione più ampio!" ,
             "outputPlulare": "La soglia da raggiungere per considerare il fit problema-mercato tramite la diffusione di questionari e interviste è di almeno 100 risposte ai questionari per il B2C e 20 interviste B2B. Continuate a raccogliere risposte per fare poi un'analisi su un campione più ampio!"                                                                 
         },
