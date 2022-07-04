@@ -106,8 +106,8 @@
         },
         "anc5": {
             "input": "Manca traffico web",
-            "outputSingolare": "Ti consiglio di provare a capire anche qual è il traffico che generano sulle proprie pagine web i tuoi competitor: puoi usare SimilarWeb, Semrush e Serpstat;",
-            "outputPlulare": "Vi consiglio di provare a capire anche qual è il traffico che generano sulle proprie pagine web i vostri competitor: puoi usare SimilarWeb, Semrush e Serpstat;"                                                                 
+            "outputSingolare": "Ti consiglio di provare a capire anche qual è il traffico che generano sulle proprie pagine web i tuoi competitor: puoi usare SimilarWeb, Semrush e Serpstat)",
+            "outputPlulare": "Vi consiglio di provare a capire anche qual è il traffico che generano sulle proprie pagine web i vostri competitor: puoi usare SimilarWeb, Semrush e Serpstat)"                                                                 
         },
         "anc6": {
             "input": "Manca data dell'analisi",
@@ -147,13 +147,13 @@
     "leanCanvas1": {
         "lc1": {
             "input": "Se lean canvas fatto bene",
-            "outputSingolare": "Hai creato un ottimo lean canvas. Ti sarà da base per il lean canvas definitivo che realizzerai nello sprint 3.  Utilizza gli spunti di questo documento per ragionare in modo approfondito sul marketing mix del prossimo sprint.",
-            "outputPlulare": "Avete creato un ottimo lean canvas. Vi sarà da base per il lean canvas definitivo che realizzerete nello sprint 3.  Utilizzate gli spunti di questo documento per ragionare in modo approfondito sul marketing mix del prossimo sprint."                                                                 
+            "outputSingolare": "Hai creato un ottimo lean canvas. Ti sarà da base per il lean canvas che realizzerai nello sprint 3.  Utilizza gli spunti di questo documento per ragionare in modo approfondito sul marketing mix del prossimo sprint.",
+            "outputPlulare": "Avete creato un ottimo lean canvas. Vi sarà da base per il lean canvas che realizzerete nello sprint 3.  Utilizzate gli spunti di questo documento per ragionare in modo approfondito sul marketing mix del prossimo sprint."                                                                 
         },
         "lc2": {
             "input": "Lean canvas fatto male",
-            "outputSingolare": "Rivedi il lean canvas alla luce delle considerazioni fatte. Ti sarà da base per il lean canvas definitivo che realizzerai nello sprint 3.  Utilizza gli spunti di questo documento per ragionare in modo approfondito sul marketing mix del prossimo sprint.",
-            "outputPlulare": "Rivedete il lean canvas alla luce delle considerazioni fatte. Vi sarà da base per il lean canvas definitivo che realizzerai nello sprint 3.  Utilizzate gli spunti di questo documento per ragionare in modo approfondito sul marketing mix del prossimo sprint."                                                                 
+            "outputSingolare": "Rivedi il lean canvas alla luce delle considerazioni fatte. Ti sarà da base per il lean canvas che realizzerai nello sprint 3.  Utilizza gli spunti di questo documento per ragionare in modo approfondito sul marketing mix del prossimo sprint.",
+            "outputPlulare": "Rivedete il lean canvas alla luce delle considerazioni fatte. Vi sarà da base per il lean canvas che realizzerai nello sprint 3.  Utilizzate gli spunti di questo documento per ragionare in modo approfondito sul marketing mix del prossimo sprint."                                                                 
         },
         "lc3": {
             "input": "Key metrics mediocri",
