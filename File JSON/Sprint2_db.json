@@ -140,7 +140,7 @@
         "bc4": {
             "input": "Poche variabili",
             "outputSingolare": "Cerca di identificare qualche variabile aggiuntiva. Prova a pensare come la tua soluzione si distinguerà rispetto ai competitor che hai individuato ed espandi l’analisi che per ora hai effettuato.",
-            "outputPlulare": "Cercate di identificare qualche variabile aggiuntiva. Provate a pensare come la tua soluzione si distinguerà rispetto ai competitor che avete individuato ed espandete l’analisi che per ora hai effettuato."                                                                 
+            "outputPlulare": "Cercate di identificare qualche variabile aggiuntiva. Provate a pensare come la vostra soluzione si distinguerà rispetto ai competitor che avete individuato ed espandete l’analisi che per ora avete effettuato."                                                                 
         }
     }
     ,
@@ -168,7 +168,7 @@
         "lc5": {
             "input": "Unfair Advantage mediocre",
             "outputSingolare": "L’ Unfair advantage non riguarda caratteristiche intrinseche nel progetto ma piuttosto dei vantaggi che porterai  come team o con le tecnologie che utilizzi (brevetti, piattaforma proprietaria, competenze etc.). Dovresti definire il vantaggio competitivo che sia di difficile imitazione da parte dei competitor.",
-            "outputPlulare": "L’ Unfair advantage non riguarda caratteristiche intrinseche nel progetto ma piuttosto dei vantaggi che porterete  come team o con le tecnologie che utilizzate (brevetti, piattaforma proprietaria, competenze etc.). Dovresti definire il vantaggio competitivo che sia di difficile imitazione da parte dei competitor."                                                                 
+            "outputPlulare": "L’ Unfair advantage non riguarda caratteristiche intrinseche nel progetto ma piuttosto dei vantaggi che porterete  come team o con le tecnologie che utilizzate (brevetti, piattaforma proprietaria, competenze etc.). Dovreste definire il vantaggio competitivo che sia di difficile imitazione da parte dei competitor."                                                                 
         },
         "lc6": {
             "input": "Canali mediocre",
