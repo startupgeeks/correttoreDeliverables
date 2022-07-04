@@ -118,7 +118,7 @@ function correggi() {
 
         let valueRadioButtonValutation = document.querySelector('input[name="valutazione"]:checked').value;
         if(valueRadioButtonValutation.localeCompare("medium")==0){
-            document.getElementById("end").innerHTML = "Ben fatto! Ti invito però a rivedere nuovamente i documenti in base ai suggerimenti indicati. Dal prossimo sprint ti concentrerai a 360* sulla tua soluzione e realizzarai un primo smoke test per raccogliere le prime metriche. Proprio per questo le fondamenta del progetto dovranno essere il più solide possibile. In bocca al lupo, non vedo l'ora di vedere il tuo progetto concretizzarsi";
+            document.getElementById("end").innerHTML = "Ben fatto! Vi invito però a rivedere nuovamente i documenti in base ai suggerimenti indicati. Dal prossimo sprint ti concentrerai a 360° sulla vostra soluzione e realizzare un primo smoke test per raccogliere le prime metriche. Proprio per questo le fondamenta del progetto dovranno essere il più solide possibile. In bocca al lupo, non vedo l'ora di vedere il vostro progetto concretizzarsi";
         } else if(valueRadioButtonValutation.localeCompare("bad")==0){
             document.getElementById("end").innerHTML = "Concludendo, vi invito a provare a fare di nuovo tutti i deliverables di questo sprint tenendo a mente i suggerimenti ricevuti e, nei prossimi sprint, di prendervi il tempo necessario per fare un lavoro completo. Questo vi permetterà, poi, di fare grandi passi in avanti per il vostro progetto! Dal prossimo sprint vi concentrerete a 360* sulla vostra soluzione e realizzarete un primo smoke test per raccogliere le prime metriche. Proprio per queasto avere delle fonadmenta solide risulta di vitale importanza. In bocca al lupo, non vedo l'ora di vedere il vostro progetto concretizzarsi";
         } else if(valueRadioButtonValutation.localeCompare("good")==0){
@@ -167,7 +167,7 @@ function addTextIntoFeedback(sel,idFeedbackBefore,idFeedbackAfter){
 }
 
 function pulisciOutcome(){
-
+    
 
 }
 
