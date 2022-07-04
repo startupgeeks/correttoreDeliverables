@@ -112,7 +112,7 @@
         "anc6": {
             "input": "Manca data dell'analisi",
             "outputSingolare": "Ricordati di aggiungere una data: dovrai realizzare la stessa analisi tra un trimestre/quadrimestre. Questo per farti un’idea riguardo l’andamento della concorrenza. Per tenere traccia dei tuoi competitors usa Google Alert (inserisci un concorrente e Google fa il resto, direttamente nella tua inbox).",
-            "outputPlulare": "Ricordatevi di aggiungere una data: dovrai realizzare la stessa analisi tra un trimestre/quadrimestre. Questo per farvi un’idea riguardo l’andamento della concorrenza. Per tenere traccia dei vostri competitors usate Google Alert (inserite un concorrente e Google fa il resto, direttamente nella tua inbox)."                                                                 
+            "outputPlulare": "Ricordatevi di aggiungere una data: dovrete realizzare la stessa analisi tra un trimestre/quadrimestre. Questo per farvi un’idea riguardo l’andamento della concorrenza. Per tenere traccia dei vostri competitors usate Google Alert (inserite un concorrente e Google fa il resto, direttamente nella tua inbox)."                                                                 
         },
         "anc7": {
             "input": "Non analizzi strategia di vendita e marketing",
@@ -184,6 +184,16 @@
             "input": "Ricavi senza modello di Business",
             "outputSingolare": "Nella sezione dei ricavi ti consiglierei di identificare almeno uno dei 12 modelli proposti nei contenuti. Quelli proposti sono i modelli più utilizzati ed in questo modo riesci a farci capire come sarà strutturato il flusso dei tuoi ricavi e come monetizzere il progetto. Ricorda che può essere normale avere un modello di business in una fase iniziale del progetto e modificarlo al raggiungimento di una certa base di users.",
             "outputPlulare": "Nella sezione dei ricavi vi consiglierei di identificare almeno uno dei 12 modelli proposti nei contenuti. Quelli proposti sono i modelli più utilizzati ed in questo modo riuscite a farci capire come sarà strutturato il flusso dei vostri ricavi e come monetizzere il progetto. Ricordate che può essere normale avere un modello di business in una fase iniziale del progetto e modificarlo al raggiungimento di una certa base di users."                                                                 
+        },
+        "lc9": {
+            "input": "Manca high-level concept",
+            "outputSingolare": "Ti suggerisco di aggiugnere l'high-level concept per dare una suggestiona della tua proposta di valore in 3 parole. *AD ESEMPIO..*",
+            "outputPlulare": "Vi suggerisco di aggiugnere l'high-level concept per dare una suggestiona della vostra proposta di valore in 3 parole. *AD ESEMPIO..*"                                                                 
+        },
+        "lc10": {
+            "input": "Mancano gli early adopter",
+            "outputSingolare": "Ti suggerisco di identificare i tuoi early adopters, essi saranno di fondamentale importanza per pianificare la strategia iniziale.",
+            "outputPlulare": "Vi suggerisco di identificare i vostri early adopters, essi saranno di fondamentale importanza per pianificare la strategia iniziale."                                                                 
         }
     }
   }
