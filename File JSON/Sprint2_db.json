@@ -21,6 +21,11 @@
             "outputPlulare": "Ogni insight che siete riusciti ad ottenere quali ragionamenti vi ha portato a fare? Provate ad inserire delle considerazioni per ogni risultato raggiunto nel questionario. "                                                                 
         },
         "gob5": {
+            "input": "Se manca l'analisi delle interviste",
+            "outputSingolare": " Le interviste svolte sono un ottimo punto di partenza. Ti consiglio di non fermarti alla sola trascrizione delle risposte ottenute, ma di analizzarle per poter capire se le tue assunzioni sono state validate o meno e apportare le modifiche necessarie al tuo progetto di startup.",
+            "outputPlulare": "Le interviste svolte sono un ottimo punto di partenza. Vi consiglio di non fermarvi alla sola trascrizione delle risposte ottenute, ma di analizzarle per poter capire se le vostre assunzioni sono state validate o meno e apportare le modifiche necessarie al vostro progetto di startup."                                                                 
+        },
+        "gob6": {
             "input": "Frase finale",
             "outputSingolare": "Alla luce dei risultati raccolti, puoi ora compilare le sezioni della Javelin Board che erano state lasciate vuote esprimendo quindi i risultati ottenuti, gli insegnamenti appresi e le decisioni sul progetto che ne conseguono con una piccola proposta di soluzione per ogni esperimento di validazione con esito positivo.",
             "outputPlulare": "Alla luce dei risultati raccolti, potete ora compilare le sezioni della Javelin Board che erano state lasciate vuote esprimendo quindi i risultati ottenuti, gli insegnamenti appresi e le decisioni sul progetto che ne conseguono con una piccola proposta di soluzione per ogni esperimento di validazione con esito positivo."                                                                 
@@ -81,6 +86,11 @@
             "input": "TAM troppo basso (<1 Mld)",
             "outputSingolare": "Il tuo TAM risulta molto basso. Il nostro consiglio è che il TAM sia sempre superiore ad un miliardo di euro. In caso contrario potrebbe risultare sconveniente per un investitore dare fiducia ad un progetto che va ad operare in un mercato molto di nicchia",
             "outputPlulare": "Il vostro TAM risulta molto basso. Il nostro consiglio è che il TAM sia sempre superiore ad un miliardo di euro. In caso contrario potrebbe risultare sconveniente per un investitore dare fiducia ad un progetto che va ad operare in un mercato molto di nicchia."                                                                 
+        },
+        "tss12": {
+            "input": "SOM troppo alto",
+            "outputSingolare": "Prova a ripercorrere gli step della tua analisi di mercato e vedere anche tramite le fonti se stai correttamente considerando il potenziale di business per la tua soluzione. Un SOM di XXX a X anni non è realistico per la maggioranza degli investitori.",
+            "outputPlulare": "Provate a ripercorrere gli step della vostra analisi di mercato e vedere anche tramite le fonti se stai correttamente considerando il potenziale di business per la tua soluzione. Un SOM di XXX a X anni non è realistico per la maggioranza degli investitori."                                                                 
         }
     },
     "analisiCompetitors": {
@@ -101,8 +111,8 @@
         },
         "anc4": {
             "input": "Manca percezione clienti (recensioni)",
-            "outputSingolare": "Puoi anche leggere le recensioni sugli store per app e sul web (Trustpilot, https://it.trustpilot.com/) per verificare qual è il sentiment generale verso i loro prodotti/servizi.",
-            "outputPlulare": "Potete anche leggere le recensioni sugli store per app e sul web (Trustpilot, https://it.trustpilot.com/) per verificare qual è il sentiment generale verso i loro prodotti/servizi."                                                                 
+            "outputSingolare": "Puoi anche leggere le recensioni sugli store per app e sul web (Trustpilot, https://it.trustpilot.com/) per verificare qual è il sentimento generale verso i loro prodotti/servizi.",
+            "outputPlulare": "Potete anche leggere le recensioni sugli store per app e sul web (Trustpilot, https://it.trustpilot.com/) per verificare qual è il sentimento generale verso i loro prodotti/servizi."                                                                 
         },
         "anc5": {
             "input": "Manca traffico web",
@@ -141,6 +151,16 @@
             "input": "Poche variabili",
             "outputSingolare": "Cerca di identificare qualche variabile aggiuntiva. Prova a pensare come la tua soluzione si distinguerà rispetto ai competitor che hai individuato ed espandi l’analisi che per ora hai effettuato.",
             "outputPlulare": "Cercate di identificare qualche variabile aggiuntiva. Provate a pensare come la vostra soluzione si distinguerà rispetto ai competitor che avete individuato ed espandete l’analisi che per ora avete effettuato."                                                                 
+        },
+        "bc5": {
+            "input": "Se le variabili del grafico cartesiano sono troppo generiche",
+            "outputSingolare": "Le variabili che hai utilizzato per costruire il grafico cartesiano risultano troppo generiche e di difficile utilizzo come metro di paragone rispetto all'esistente. Prova a riflettere su delle caratteristiche un po' più specifiche che creano valore aggiunto per i tuoi clienti.",
+            "outputPlulare": "Le variabili che avete utilizzato per costruire il grafico cartesiano risultano troppo generiche e di difficile utilizzo come metro di paragone rispetto all'esistente. Provate a riflettere su delle caratteristiche un po' più specifiche che creano valore aggiunto per i vostri clienti."                                                                 
+        },
+        "bc6": {
+            "input": "Se inseriscono funzionalità che loro non hanno, ma i competitor si ",
+            "outputSingolare": "Nella tabella di benchmarking avete inserito una serie di funzionalità che la vostra startup non ha. Vi sconsiglio caldamente di utilizzare il documento in questo modo. L'obiettivo di questa analisi è trovare funzionalità ed elementi distintivi rispetto all'esistente, quindi dovreste evidenziare un'offerta di valore che soltanto voi (o quasi) portate sul mercato.",
+            "outputPlulare": "Nella tabella di benchmarking avete inserito una serie di funzionalità che la vostra startup non ha. Vi sconsiglio caldamente di utilizzare il documento in questo modo. L'obiettivo di questa analisi è trovare funzionalità ed elementi distintivi rispetto all'esistente, quindi dovreste evidenziare un'offerta di valore che soltanto voi (o quasi) portate sul mercato."                                                                 
         }
     }
     ,
