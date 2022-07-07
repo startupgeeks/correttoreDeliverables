@@ -1,26 +1,86 @@
 {
     "marketingMix": {
       "mm1": {
-        "input": "TODO",
-        "outputSingolare": "TODO",
-        "outputPlulare": "TODO"
+        "input": "Se perfetto",
+        "outputSingolare": "Hai compreso le funzionalità di questo framework e lo hai utilizzato nel modo corretto. Questo framework ti aiuterà moltissimo in occasione della stesura del Business Plan descrittivo nel prossimo sprint.",
+        "outputPlulare": "Avete compreso le funzionalità di questo framework e lo avete utilizzato nel modo corretto. Questo framework vi aiuterà moltissimo in occasione della stesura del Business Plan descrittivo nel prossimo sprint."
       },
       "mm2": {
-        "input": "TODO",
-        "outputSingolare": "TODO",
-        "outputPlulare": "TODO"
+        "input": "Bene ma migliorable",
+        "outputSingolare": "Hai compreso le funzionalità di questo framework e lo hai utilizzato nel modo corretto. Ti lascio di seguito un appunto per raffinare ancora al meglio questo deliverable",
+        "outputPlulare": "Avete compreso le funzionalità di questo framework e lo avete utilizzato nel modo corretto. Vi lascio di seguito un appunto per raffinare ancora al meglio questo deliverable."
+      },
+      "mm3": {
+        "input": "Product approssimativo",
+        "outputSingolare": "Nella sezione product dovresti esplicitare chiaramente tutte le caratteristiche del tuo prodotto/servizio. Dovresti dettagliare come tutti gli utenti interagiranno con il tuo prodotto e dettagliare al meglio ogni processo e funzionalità. Un maggior focus su questa sezione ti semplificherà moltissimo il lavoro di stesura del business plan",
+        "outputPlulare": "Nella sezione product dovreste esplicitare chiaramente tutte le caratteristiche del vostro prodotto/servizio. Dovreste dettagliare come tutti gli utenti interagiranno con il tuo prodotto e dettagliare al meglio ogni processo e funzionalità. Un maggior focus su questa sezione ti semplificherà moltissimo il lavoro di stesura del business plan"
+      },
+      "mm4": {
+        "input": "Price approssimativo",
+        "outputSingolare": "Nella sezione price dovresti dettagliare al meglio i modelli di business che hai esplicitato nel lean canvas. Prova a specificare al meglio i ragionamenti che ti hanno portato a definire i tuoi prezzi. Che ragionamenti ti hanno portato a fare esattamente questa scelta?",
+        "outputPlulare": "Nella sezione price dovreste dettagliare al meglio i modelli di business che avete esplicitato nel lean canvas. Provate a specificare al meglio i ragionamenti che vi hanno portato a definire i vostri prezzi. Che ragionamenti vi hanno portato a fare esattamente questa scelta?"
+      },
+      "mm5": {
+        "input": "Indicano due price in tempi di sviluppo diversi",
+        "outputSingolare": "Andrebbe anche inserita una nota relativa al momento di passaggio dalla fase A alla fase B: la transizione avverrà dopo un tot di  tempo oppure dopo aver raggiunto un certo numero di di utenti ?",
+        "outputPlulare": "Andrebbe anche inserita una nota relativa al momento di passaggio dalla fase A alla fase B: la transizione avverrà dopo un tot di  tempo oppure dopo aver raggiunto un certo numero di di utenti ?"
+      },
+      "mm6": {
+        "input": "Promotion approssimativa",
+        "outputSingolare": "Ti consiglio di andare più nello specifico. Parti dai canali considerati nel lean canvas dividendo eventuali distinzioni tra online ed offline ed argomentando se i diversi canali hanno target customers differenti.",
+        "outputPlulare": "Vi consiglio di andare più nello specifico. Partite dai canali considerati nel lean canvas dividendo eventuali distinzioni tra online ed offline ed argomentando se i diversi canali hanno target customers differenti."
+      },
+      "mm7": {
+        "input": "Manca tone of voice e intensità",
+        "outputSingolare": "Questo aspetto sarà chiave per ottenere una massa critica per il tuo progetto, dunque oltre ai canali ti consiglio di cominciare anche a definire il tone of voice e l'intensità di utilizzo di ciascun canale individuato.",
+        "outputPlulare": "Questo aspetto sarà chiave per ottenere una massa critica per il vostro progetto, dunque oltre ai canali vi consiglio di cominciare anche a definire il tone of voice e l'intensità di utilizzo di ciascun canale individuato."
+      },
+      "mm8": {
+        "input": "Place fuori focus",
+        "outputSingolare": "Nella sezione Place hai indicato XXXX , in realtà la sezione place serve per indicare come avverrà la commercializzazione e la distribuzione del tuo prodotto/servizio.",
+        "outputPlulare": "Nella sezione Place avete indicato XXXX , in realtà la sezione place serve per indicare come avverrà la commercializzazione e la distribuzione del vostro prodotto/servizio."
+      },
+      "mm9": {
+        "input": "Place approssimativo",
+        "outputSingolare": "Hai correttamente indicato come avverrà la distribuzione. Ti consiglierei però di indicare le motivazioni che ti hanno portato alla tua scelta",
+        "outputPlulare": "Avete correttamente indicato come avverrà la distribuzione. Vi consiglierei però di indicare le motivazioni che vi hanno portato alla scelta"
+      },
+      "mm10": {
+        "input": "Place senza area geografica",
+        "outputSingolare": "Ti consiglio di specificare l’area geografica (e.g., Italia, Nord Italia, Europa, Lazio, etc.) di tuointeresse nella parte place.",
+        "outputPlulare": "Vi consiglio di specificare l’area geografica (e.g., Italia, Nord Italia, Europa, Lazio, etc.) di vostro interesse nella parte place."
       }
     },
     "uniqueValueProposition": {
       "uvp1": {
-        "input": "TODO",
-        "outputSingolare": "TODO",
-        "outputPlulare": "TODO"
+        "input": "Perfetta",
+        "outputSingolare": "Ottimo lavoro per la UVP. Mi riesce a trasmettere esattamente le caratteristiche del progetto! Benissimo!",
+        "outputPlulare": "Ottimo lavoro per la UVP. Mi riesce a trasmettere esattamente le caratteristiche del progetto! Benissimo!"
       },
       "uvp2": {
-        "input": "TODO",
-        "outputSingolare": "TODO",
-        "outputPlulare": "TODO"
+        "input": "Breve e chiara",
+        "outputSingolare": "Ti ricordo che la UVP deve essere breve e chiara. Essa deve permettere a chi non conosce la tua startup di capire di che cosa si occupa in toto senza equivocità. Cerca di stringere la UVP in quanto può essere eccessivamente lunga ( la tua UVP ha X caratteri, una buona UVP sta in media tra i 70-140 caratteri).",
+        "outputPlulare": "Vi ricordo che la UVP deve essere breve e chiara. Essa deve permettere a chi non conosce la vostra startup di capire di che cosa si occupa in toto senza equivocità. Cercate di stringere la UVP in quanto può essere eccessivamente lunga ( la vostra UVP ha X caratteri, una buona UVP sta in media tra i 70-140 caratteri)."
+      },
+      "uvp3": {
+        "input": "Non definisce benefici/pains/caratteristiche",
+        "outputSingolare": "La UVP dovrebbe chiarire i benefici che il tuo prodotto/servizio offre, i problemi che è in grado di risolvere e le caratteristiche differenziali rispetto ai competitor.",
+        "outputPlulare": "La UVP dovrebbe chiarire i benefici che il vostro prodotto/servizio offre, i problemi che è in grado di risolvere e le caratteristiche differenziali rispetto ai competitor."
+      },
+      "uvp4": {
+        "input": "Simile a slogan",
+        "outputSingolare": "La UVP non dovrebbe assomigliare ad uno slogan, ti suggerisco di concentrarti sulla chiarezza del messaggio rispetto al market appeal che può creare a potenziali clienti. ",
+        "outputPlulare": "La UVP non dovrebbe assomigliare ad uno slogan, vi suggerisco di concentrarvi sulla chiarezza del messaggio rispetto al market appeal che può creare a potenziali clienti. "
+      },
+      "uvp5": {
+        "input": "Utilizzano i colori in modo erroneo",
+        "outputSingolare": "Tutti i colori con cui decidi di clusterizzare i bisogni del tuo target dovrebbero trovare corrispondenza sia nella UVP che nel payoff.",
+        "outputPlulare": "Tutti i colori con cui decidete di clusterizzare i bisogni del vostro target dovrebbero trovare corrispondenza sia nella UVP che nel payoff."
+      },
+      "uvp6": {
+        "input": "Utilizzano due periodi divisi da virgola",
+        "outputSingolare": "La divisione in due periodi divisi dalla virgola non è consigliabile per la UVP. Less is More, ti consiglierei di provare a mantenere tutto in un unico periodo.",
+        "outputPlulare": "La divisione in due periodi divisi dalla virgola non è consigliabile per la UVP. Less is More, vi consiglierei di provare a mantenere tutto in un unico periodo."
       }
     },
     "landingPage": {
