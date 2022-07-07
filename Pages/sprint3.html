@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deliverables Correttore</title>
+  <link rel="icon" type="image/x-icon" href="../Assets/favicon.ico">
+
+  <link rel="stylesheet" href="../style.css">
+  <script  src="../scripts/functionInCommon.js"></script>  
+  <script  src="../scripts/sprint3_uploadDB.js"></script>  
+<meta charset="UTF-8" />
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="../Assets/sg_logo.png" alt="LOGO"></div>
+  </header>    
+  <br><br>
+  <div class="column">
+    <div class="blockText">
+      <h1 class="titoloDeliverable">Sprint 2</h1>
+      
+      <form id="myForm" action="/action_page.php">
+        <input type="button" onclick="correggi()" value="Correggi" class="btn">   
+        <input type="button" onclick="reload()" value="Pulisci" class="btn" style="background-color: white; color: #094074;margin-left: 40px">
+        <br><br><br>
+            <div class="divToScroll divWithScroll">
+            <!-- GENERALE -->
+            <h2 class="titoloDeliverable">Generale</h2> 
+              <label for="fname">Nome partecipante</label><br>
+              <input type="text" id="name" name="name" class="name" style="border-color: #094074 red #094074 red;"><br><br>
+              
+              
+              <fieldset style="border-color: #094074 red #094074 red;">
+                <legend>Selezionare se team singolo</legend>
+                <table>
+                  <tr>
+                    <td><input type="radio" name="dimensioni_team" value="singolare" checked/></td>
+                    <td><span style="padding-left: 5%;">Plurale</span> </td>
+                  </tr>
+              
+                <tr>
+                  <td><input type="radio" name="dimensioni_team" value="plurale"/></td>
+                  <td style="padding-left: 5%;">Singolare </td>
+                </tr>
+              </table>
+              </fieldset>
+              
+              <br>
+              <fieldset style="border-color: #094074 red #094074 red;">
+                <legend>Selezionare se mentor (paccheto Standard o plus) </legend>
+                <table>
+                  <tr>
+                    <td> <input type="radio" name="mentor" value="no" checked/> <br></td>
+                    <td style="padding-left: 5%; vertical-align: top;"> Si</td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="radio" name="mentor" value="si"/>  </td>
+                    <td><span style="padding-left: 5%;vertical-align: top;">No</span> </td>
+                  </tr>
+                  
+                </table>          
+                <!-- non so perchè devo mettere invertiti Si e No -->
+              </fieldset>
+            <br>
+            <!-- fine GENERALE -->
+
+              <!-- GET OUT OF THE BUILDING-->
+            <h2 class="titoloDeliverable"> Marketing Mix</h2>  
+            <div id="marketingMixInput"></div>
+            <h2 class="titoloDeliverable"> Unique Value Proposition</h2>  
+            <div id="uniqueValuePropositionInput"></div>
+            <h2 class="titoloDeliverable"> Landing Page</h2>  
+            <div id="landingPageInput"></div>
+            <h2 class="titoloDeliverable"> Funnel Marketing</h2>  
+            <div id="funnelMarketingInput"></div>
+            <h2 class="titoloDeliverable"> Sales Deck</h2>  
+            <div id="salesDeckInput"></div>  
+            <h2 class="titoloDeliverable"> Lean Canvas 2</h2>  
+            <div id="leanCanvas2Input"></div>  
+
+            <script>
+                
+               //console.log(db); 
+               /*
+                for (var i = 1; i <= 2; i++) {
+                    gal.innerHTML += '<div class="checkbox_container" data-namecomponent="MarketingMix'+i+'" style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_GOB'+i+'""></span></label><br><br>';
+                  };
+                */  
+                for (let key1 in db){
+                    let gal = document.getElementById(key1.concat('Input'));
+                    let nameSection = key1.charAt(0).toUpperCase()+ key1.slice(1);
+                    
+                    //console.log(nameSection);
+                    let tag =""; //Per commento personalizzato
+                    for(let key2 in db[key1]){
+                        tag = key2;
+                        //console.log(db[key1][key2]);
+                        //console.log(key2.charAt(key2.length - 1));
+                        gal.innerHTML += '<div class="checkbox_container" data-namecomponent="'+nameSection+key2.charAt(key2.length - 1)+'" style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_'+key2.toUpperCase()+'""></span></label><br><br>';
+                        document.getElementById("Input_"+key2.toUpperCase()).innerHTML=db[key1][key2].input;
+                    }
+                    gal.innerHTML += '<label for="Commento_personalizzato_'+tag.toUpperCase()+'">Ulteriore commento personalizzato su '+nameSection+'</label><br><textarea name="Commento_personalizzato_'+tag.toUpperCase()+'" name="Commento_personalizzato_'+tag.toUpperCase()+'" class="Commento_personalizzato_'+tag.toUpperCase()+'" cols="40" rows="5" style="border-width: medium ;border-color: #094074 red #094074 red;background-color: #d3fffedb;"></textarea>    '; 
+                }  
+            </script>
+            <!--
+            <label for="Commento_personalizzato_mm">Ulteriore commento personalizzato sulla analisi di intervista e dati</label><br>
+            <textarea name="Commento_personalizzato_mm" name="Commento_personalizzato_mm" class="Commento_personalizzato_mm" cols="40" rows="5" style="border-width: medium ;border-color: #094074 red #094074 red;background-color: #d3fffedb;"></textarea>           
+            -->    
+
+            <!-- VALUTAZIONE -->
+              
+            <h2 class="titoloDeliverable">Valutazione</h2> 
+              <fieldset style="border-color: #094074 red #094074 red;">
+                <legend>Valutazione</legend>
+                <table>
+                  <tr>
+                    <td> <input type="radio" name="valutazione" value="bad" /> <br></td>
+                    <td style="vertical-align: top;"><span style="padding-left: 5%">Negativo :(</span></td>
+                  </tr>
+                  <tr>
+                    <td><input type="radio" name="valutazione" value="medium" checked/> <br></td>
+                    <td style="vertical-align: top;"><span style="padding-left: 5%;white-space: nowrap;">Così così :|</span></td>
+                  </tr>
+                  <tr>
+                    <td><input type="radio" name="valutazione" value="good"/></td>
+                    <td style="vertical-align: top;"><span style="padding-left: 5%;">Positivo :D</span></td>
+                  </tr>
+                </table>
+              </fieldset>
+        <br> <br>
+        <input type="button" onclick="correggi()" value="Correggi" class="btn">  
+        <br> <br>
+      </div>
+     </form>
+    </div>
+  </div>
+
+
+</div>
+</body>
+
+<!--  #FOR PRODUCTION -->
+<script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+
+<!-- Load our React components. -->
+<script src="../Components/checkbox.js"></script>
+<script  src="../scripts/sprint3.js"></script>
+
+</html>
