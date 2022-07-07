@@ -13,12 +13,12 @@ function addCheckboxes(nameReactComponent, idInputName,nameDiv,numberOfCheckboxe
                   };
   }
 
-  function reload(){
-      if (confirm("In questo modo perderai il feedback, sei sicuro?")) {
-        window.location.reload();
-      } 
-    }
+function reload(){
+    if (confirm("In questo modo perderai il feedback, sei sicuro?")) {
+      window.location.reload();
+    } 
+  }
 
-
+  
     
   

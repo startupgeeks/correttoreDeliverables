@@ -16,7 +16,7 @@
   <br><br>
   <div class="column">
     <div class="blockText">
-      <h1 class="titoloDeliverable">Sprint 2</h1>
+      <h1 class="titoloDeliverable">Sprint 3</h1>
       
       <form id="myForm" action="/action_page.php">
         <input type="button" onclick="correggi()" value="Correggi" class="btn">   
@@ -93,13 +93,16 @@
                     //console.log(nameSection);
                     let tag =""; //Per commento personalizzato
                     for(let key2 in db[key1]){
-                        tag = key2;
+                        if(tag==""){
+                             tag = key2.slice(0, -1); //x SISTEMARE IL DISCORSO DEL CASO IN CUI CI FOSSERO 2 NUMERI FINALI
+                        }
                         //console.log(db[key1][key2]);
                         //console.log(key2.charAt(key2.length - 1));
                         gal.innerHTML += '<div class="checkbox_container" data-namecomponent="'+nameSection+key2.charAt(key2.length - 1)+'" style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_'+key2.toUpperCase()+'""></span></label><br><br>';
                         document.getElementById("Input_"+key2.toUpperCase()).innerHTML=db[key1][key2].input;
                     }
-                    gal.innerHTML += '<label for="Commento_personalizzato_'+tag.toUpperCase()+'">Ulteriore commento personalizzato su '+nameSection+'</label><br><textarea name="Commento_personalizzato_'+tag.toUpperCase()+'" name="Commento_personalizzato_'+tag.toUpperCase()+'" class="Commento_personalizzato_'+tag.toUpperCase()+'" cols="40" rows="5" style="border-width: medium ;border-color: #094074 red #094074 red;background-color: #d3fffedb;"></textarea>    '; 
+                    //console.log("QUI:"+tag);
+                    gal.innerHTML += '<label for="Commento_personalizzato_'+tag.toLowerCase()+'">Ulteriore commento personalizzato su '+nameSection+'</label><br><textarea name="Commento_personalizzato_'+tag.toLowerCase()+'" name="Commento_personalizzato_'+tag.toLowerCase()+'" class="Commento_personalizzato_'+tag.toLowerCase()+'" cols="40" rows="5" style="border-width: medium ;border-color: #094074 red #094074 red;background-color: #d3fffedb;"></textarea>    '; 
                 }  
             </script>
             <!--
@@ -115,28 +118,72 @@
                 <table>
                   <tr>
                     <td> <input type="radio" name="valutazione" value="bad" /> <br></td>
-                    <td style="vertical-align: top;"><span style="padding-left: 5%">Negativo :(</span></td>
+                    <td style="vertical-align: top;"><span style="padding-left: 5%">Negativo </span></td>
                   </tr>
                   <tr>
                     <td><input type="radio" name="valutazione" value="medium" checked/> <br></td>
-                    <td style="vertical-align: top;"><span style="padding-left: 5%;white-space: nowrap;">Così così :|</span></td>
+                    <td style="vertical-align: top;"><span style="padding-left: 5%;white-space: nowrap;">Così così </span></td>
                   </tr>
                   <tr>
                     <td><input type="radio" name="valutazione" value="good"/></td>
-                    <td style="vertical-align: top;"><span style="padding-left: 5%;">Positivo :D</span></td>
+                    <td style="vertical-align: top;"><span style="padding-left: 5%;">Positivo </span></td>
                   </tr>
                 </table>
-              </fieldset>
+            </fieldset>
         <br> <br>
         <input type="button" onclick="correggi()" value="Correggi" class="btn">  
         <br> <br>
       </div>
      </form>
     </div>
+
+
   </div>
 
+  <div class="column">
+    <div class="blockText outcome ">
+      <h1 class="titoloDeliverable">Feedback</h1>
+      
+        <button type="button" onclick="copyEvent('copy')" class="btn" >Copia</button> 
+        <!-- OUTCOME DIV -->
+        <br><br><br>
+        <div id="copy" class="text-outcome divToScroll divWithScroll" contenteditable="true" style="font-weight: normal ;">
+        
+          Ciao <span id="NOME"></span>,<br>
 
-</div>
+          <p id="intro_pt1"></p>
+          <p id="intro_pt2"></p>
+
+          <div id="bodyOutcome"></div>
+          <!-- 
+          <b id="Title_gob"></b>
+          <div id="getOutOfTheBuildingOutcomes"></div>
+          <script>addOutcomes("GOB","getOutOfTheBuildingOutcomes",6);</script>
+          <p id="Commento_personalizzato_gob"></p>
+          -->
+          <script>
+            let cunterNumberOfElements = 0
+            for (let key1 in db){
+                    let gal = document.getElementById('bodyOutcome');
+                    let tag =""; 
+                    cunterNumberOfElements = 0;
+                    for(let key2 in db[key1]){
+                        if( cunterNumberOfElements==0){
+                            tag = key2.slice(0, -1).toLowerCase(); //x SISTEMARE IL DISCORSO DEL CASO IN CUI CI FOSSERO 2 NUMERI FINALI
+                        }
+                        cunterNumberOfElements = cunterNumberOfElements +1;
+                    }
+                    gal.innerHTML += '<b id="Title_'+tag+'""></b><div id="'+key1+'Outcomes"></div>';
+                    addOutcomes(tag.toUpperCase(),key1+"Outcomes",cunterNumberOfElements);
+                    gal.innerHTML += '<p id="Commento_personalizzato_'+tag.toLowerCase()+'"></p>';
+                }  
+          </script>
+          <br><br>
+          <p id="end"></p>
+        </div>  
+     </div> 
+    </div>
+
 </body>
 
 <!--  #FOR PRODUCTION -->
