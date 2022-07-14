@@ -126,8 +126,8 @@
       },
       "lp9": {
         "input": "No mobile friendly",
-        "outputSingolare": "Ti consiglio di rivedere la versione mobile, è fondamentale ottimizzare il percorso dell'utente da smartphone, prima che da desktop. Infatti, è probabile che la maggior parte dei visitatori visiterrà la pagina web tramite dispositivi mobili.",
-        "outputPlulare": "Vi consiglio di rivedere la versione mobile, è fondamentale ottimizzare il percorso dell'utente da smartphone, prima che da desktop. Infatti, è probabile che la maggior parte dei visitatori visiterrà la pagina web da dispositivi mobili."
+        "outputSingolare": "Ti consiglio di rivedere la versione mobile, è fondamentale ottimizzare il percorso dell'utente da smartphone, prima che da desktop. Infatti, è probabile che la maggior parte dei visitatori visiterà la pagina web tramite dispositivi mobili.",
+        "outputPlulare": "Vi consiglio di rivedere la versione mobile, è fondamentale ottimizzare il percorso dell'utente da smartphone, prima che da desktop. Infatti, è probabile che la maggior parte dei visitatori visiterà la pagina web da dispositivi mobili."
       },
       "lp10": {
         "input": "Ottimo lavoro :D",
