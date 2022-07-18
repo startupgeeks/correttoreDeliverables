@@ -42,8 +42,8 @@
       },
       "mm9": {
         "input": "Place approssimativo",
-        "outputSingolare": "Hai correttamente indicato come avverrà la distribuzione. Ti consiglierei però di indicare le motivazioni che ti hanno portato alla tua scelta",
-        "outputPlulare": "Avete correttamente indicato come avverrà la distribuzione. Vi consiglierei però di indicare le motivazioni che vi hanno portato alla scelta"
+        "outputSingolare": "Hai correttamente indicato come avverrà la distribuzione. Ti consiglierei però di indicare le motivazioni che ti hanno portato alla tua scelta.",
+        "outputPlulare": "Avete correttamente indicato come avverrà la distribuzione. Vi consiglierei però di indicare le motivazioni che vi hanno portato alla scelta,"
       },
       "mm10": {
         "input": "Place senza area geografica",
@@ -187,13 +187,13 @@
     "leanCanvas2": {
       "lc1": {
         "input": "Se lean canvas fatto bene",
-        "outputSingolare": "Hai creato un ottimo lean canvas. Ti sarà da base per il lean canvas che realizzerai nello sprint 3.  Utilizza gli spunti di questo documento per ragionare in modo approfondito sul marketing mix del prossimo sprint.",
-        "outputPlulare": "Avete creato un ottimo lean canvas. Vi sarà da base per il lean canvas che realizzerete nello sprint 3.  Utilizzate gli spunti di questo documento per ragionare in modo approfondito sul marketing mix del prossimo sprint."
+        "outputSingolare": "Hai creato un ottimo lean canvas. Sarà fondamentale tenerlo aggiornato e testare le varie assunzioni che ci sono all'interno durante il continuo del vostro progetto.",
+        "outputPlulare": "Avete creato un ottimo lean canvas. Sarà fondamentale tenerlo aggiornato e testare le varie assunzioni che ci sono all'interno durante il continuo del vostro progetto."
       },
       "lc2": {
         "input": "Lean canvas fatto male",
-        "outputSingolare": "Rivedi il lean canvas alla luce delle considerazioni fatte. Ti sarà da base per il lean canvas che realizzerai nello sprint 3.  Utilizza gli spunti di questo documento per ragionare in modo approfondito sul marketing mix del prossimo sprint.",
-        "outputPlulare": "Rivedete il lean canvas alla luce delle considerazioni fatte. Vi sarà da base per il lean canvas che realizzerai nello sprint 3.  Utilizzate gli spunti di questo documento per ragionare in modo approfondito sul marketing mix del prossimo sprint."
+        "outputSingolare": "Rivedi il lean canvas alla luce delle considerazioni fatte. Utilizza gli spunti di questo documento per ragionare in modo approfondito sulle assunzioni chiave e i test da svolgere.",
+        "outputPlulare": "Rivedete il lean canvas alla luce delle considerazioni fatte. Utilizzate gli spunti di questo documento per ragionare in modo approfondito sulle assunzioni chiave e i test da svolgere."
       },
       "lc3": {
         "input": "Key metrics mediocri",
