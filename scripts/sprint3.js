@@ -14,7 +14,7 @@ function correggi() {
         addOutcome('LandingPage','lp', db.landingPage,"Landing Page",true);
         addOutcome('FunnelMarketing','fm', db.funnelMarketing,"Modalità adv",true);
         addOutcome('SalesDeck','sd', db.salesDeck,"Sales Deck",true);
-        addOutcome('LeanCanvas2','lc', db.leanCanvas2,"Leand Canvas 2.0",true);
+        addOutcome('LeanCanvas2','lc', db.leanCanvas2,"Lean Canvas 2.0",true);
 
         endMessage(true);
     }else{
