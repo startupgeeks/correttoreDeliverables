@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../style.css">
   <script  src="../scripts/functionInCommon.js"></script>  
   <script  src="../scripts/sprint3_uploadDB.js"></script>  
+  
 <meta charset="UTF-8" />
 </head>
 <body>
@@ -76,7 +77,7 @@
             <h2 class="titoloDeliverable"> Sales Deck</h2>  
             <div id="salesDeckInput"></div>  
             <h2 class="titoloDeliverable"> Lean Canvas 2</h2>  
-            <div id="leanCanvas2Input"></div>  
+            <div id="leanCanvasInput"></div>  
 
             <script>
                 
@@ -94,11 +95,23 @@
                     let tag =""; //Per commento personalizzato
                     for(let key2 in db[key1]){
                         if(tag==""){
-                             tag = key2.slice(0, -1); //x SISTEMARE IL DISCORSO DEL CASO IN CUI CI FOSSERO 2 NUMERI FINALI
+                             tag = key2.slice(0, -1).toLowerCase(); //x SISTEMARE IL DISCORSO DEL CASO IN CUI CI FOSSERO 2 NUMERI FINALI
                         }
+                        console.log(tag);
                         //console.log(db[key1][key2]);
                         //console.log(key2.charAt(key2.length - 1));
-                        gal.innerHTML += '<div class="checkbox_container" data-namecomponent="'+nameSection+key2.charAt(key2.length - 1)+'" style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_'+key2.toUpperCase()+'""></span></label><br><br>';
+
+                        //SE è UN NUMERO MINORE DI 10
+                        if(key2.charAt(key2.length - 2)>= '0' && key2.charAt(key2.length - 2)<= '9'){
+                          //IN QUESTO CASO è MAGGIORE DI 10
+                          gal.innerHTML += '<div class="checkbox_container" data-namecomponent="'+nameSection+key2.slice(-2)+'" style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_'+key2.toUpperCase()+'""></span></label><br><br>';
+
+                        }else{
+                          //IN QUESTO CASO è MINORE DI 10
+                          gal.innerHTML += '<div class="checkbox_container" data-namecomponent="'+nameSection+key2.charAt(key2.length - 1)+'" style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_'+key2.toUpperCase()+'""></span></label><br><br>';
+
+                        }
+                        //gal.innerHTML += '<div class="checkbox_container" data-namecomponent="'+nameSection+key2.charAt(key2.length - 1)+'" style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_'+key2.toUpperCase()+'""></span></label><br><br>';
                         document.getElementById("Input_"+key2.toUpperCase()).innerHTML=db[key1][key2].input;
                     }
                     //console.log("QUI:"+tag);
@@ -170,10 +183,12 @@
                     for(let key2 in db[key1]){
                         if( cunterNumberOfElements==0){
                             tag = key2.slice(0, -1).toLowerCase(); //x SISTEMARE IL DISCORSO DEL CASO IN CUI CI FOSSERO 2 NUMERI FINALI
-                        }
+                            console.log(tag);
+                          }
                         cunterNumberOfElements = cunterNumberOfElements +1;
                     }
                     gal.innerHTML += '<b id="Title_'+tag+'""></b><div id="'+key1+'Outcomes"></div>';
+                    //console.log("numero di elemtni è"+cunterNumberOfElements);
                     addOutcomes(tag.toUpperCase(),key1+"Outcomes",cunterNumberOfElements);
                     gal.innerHTML += '<p id="Commento_personalizzato_'+tag.toLowerCase()+'"></p>';
                 }  

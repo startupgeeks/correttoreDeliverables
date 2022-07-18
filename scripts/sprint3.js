@@ -14,7 +14,7 @@ function correggi() {
         addOutcome('LandingPage','lp', db.landingPage,"Landing Page",true);
         addOutcome('FunnelMarketing','fm', db.funnelMarketing,"Modalità adv",true);
         addOutcome('SalesDeck','sd', db.salesDeck,"Sales Deck",true);
-        addOutcome('LeanCanvas2','lc', db.leanCanvas2,"Lean Canvas 2.0",true);
+        addOutcome('LeanCanvas','lc', db.leanCanvas,"Lean Canvas 2.0",true);
 
         endMessage(true);
     }else{
@@ -25,7 +25,7 @@ function correggi() {
         addOutcome('LandingPage','lp', db.landingPage,"Landing Page",false);
         addOutcome('FunnelMarketing','fm', db.funnelMarketing,"Modalità adv",false);
         addOutcome('SalesDeck','sd', db.salesDeck,"Sales Deck",false);
-        addOutcome('LeanCanvas2','lc', db.leanCanvas2,"Leand Canvas 2.0",false);
+        addOutcome('LeanCanvas','lc', db.leanCanvas,"Leand Canvas 2.0",false);
 
         endMessage(false);
     }
@@ -95,15 +95,19 @@ function addOutcome(nameSection,idSection, listSection,title,isSingolare){
     
     
     for (let key in listSection) {
+        //console.log(listSection);
         x=x+1;
+        console.log(x);
         if(isSingolare){
             if(addTextIntoFeedback('.'.concat(nameSection).concat(x.toString()),idSection.toUpperCase().concat(x.toString()),listSection[key].outputSingolare)){
                 contatoreTitle=contatoreTitle+1;
+                
             }
          }
         else{
             if(addTextIntoFeedback('.'.concat(nameSection).concat(x.toString()),idSection.toUpperCase().concat(x.toString()),listSection[key].outputPlulare)){
                 contatoreTitle=contatoreTitle+1;
+                console.log('.'.concat(nameSection).concat(x.toString()));
            }
         }
         
@@ -118,7 +122,9 @@ function addOutcome(nameSection,idSection, listSection,title,isSingolare){
 
 function addTextIntoFeedback(sel,idFeedbackBefore,idFeedbackAfter){
     try{
+        
      if(document.querySelector(sel.concat(':checked')).value){
+        //console.log(sel);
         document.getElementById(idFeedbackBefore).innerHTML = idFeedbackAfter+"</br>";
         return true;
         }

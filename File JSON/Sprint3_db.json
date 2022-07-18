@@ -133,12 +133,13 @@
         "input": "No mobile friendly",
         "outputSingolare": "Ti consiglio di rivedere la versione mobile, è fondamentale ottimizzare il percorso dell'utente da smartphone, prima che da desktop. Infatti, è probabile che la maggior parte dei visitatori visiterà la pagina web tramite dispositivi mobili.",
         "outputPlulare": "Vi consiglio di rivedere la versione mobile, è fondamentale ottimizzare il percorso dell'utente da smartphone, prima che da desktop. Infatti, è probabile che la maggior parte dei visitatori visiterà la pagina web da dispositivi mobili."
-      },"lp10": {
+      },
+      "lp10": {
         "input": "Poche CTA",
         "outputSingolare": "Nella landing page noto solo # CTA. Lo scopo della landing page è generare lead, per facilitare un utente a fare ciò sarebbe meglio provare ad inserire una CTA (NOME DELLA CTA USATA) in quasi ogni sezione.",
         "outputPlulare": "Nella landing page noto solo # CTA. Lo scopo della landing page è generare lead, per facilitare un utente a fare ciò sarebbe meglio provare ad inserire una CTA (NOME DELLA CTA USATA) in quasi ogni sezione."
       },
-            "lp11": {
+       "lp11": {
         "input": "Ottimo lavoro :D",
         "outputSingolare": "In conclusione, hai fatto un ottimo lavoro, la landing page è chiara e permette di capire la tua offerta di valore. Ci auspichiamo otterrai risposte positive dal mercato tramite lo smoke test.",
         "outputPlulare": "In conclusione, avete fatto un ottimo lavoro, la landing page è chiara, permette di capire la vostra offerta di valore e inspira la fiducia degli utenti. Ci auspichiamo otterrete risposte positive dal mercato tramite lo smoke test."
@@ -193,7 +194,7 @@
         "outputPlulare": "TODO"
       }
     },
-    "leanCanvas2": {
+    "leanCanvas": {
       "lc1": {
         "input": "Se lean canvas fatto bene",
         "outputSingolare": "Hai creato un ottimo lean canvas. Sarà fondamentale tenerlo aggiornato e testare le varie assunzioni che ci sono all'interno durante il continuo del vostro progetto. ",

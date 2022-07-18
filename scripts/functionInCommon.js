@@ -1,3 +1,11 @@
+/*fetch('../File%20JSON/Sprint3_db.txt')
+  .then(response => response.text())
+  .then((data) => {
+    console.log(data)
+  })
+*/
+
+
 function addCheckboxes(nameReactComponent, idInputName,nameDiv,numberOfCheckboxes) {
     let gal = document.getElementById(nameDiv);
                 for (let i = 1; i <= numberOfCheckboxes ; i++) {
