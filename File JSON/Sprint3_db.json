@@ -49,6 +49,11 @@
         "input": "Place senza area geografica",
         "outputSingolare": "Ti consiglio di specificare l’area geografica (e.g., Italia, Nord Italia, Europa, Lazio, etc.) di tuointeresse nella parte place.",
         "outputPlulare": "Vi consiglio di specificare l’area geografica (e.g., Italia, Nord Italia, Europa, Lazio, etc.) di vostro interesse nella parte place."
+      },
+        "mm11": {
+        "input": "Consiglio di riflettere su pricing",
+        "outputSingolare": "Ti consiglio di riflettere sul prezzo sia per comprendere se i tuoi clienti sarebbero disposti a spendere quella cifra sia per capire la fattibilità economica analizzata nel financial pla del prossimo sprint.",
+        "outputPlulare": "Vi consiglio di riflettere sul prezzo sia per comprendere se i vostri  clienti sarebbero disposti a spendere quella cifra sia per capire la fattibilità economica analizzata nel financial pla del prossimo sprint."
       }
     },
     "uniqueValueProposition": {
@@ -234,6 +239,12 @@
         "input": "Mancano gli early adopter",
         "outputSingolare": "Ti suggerisco di identificare i tuoi early adopters, essi saranno di fondamentale importanza per pianificare la strategia iniziale.",
         "outputPlulare": "Vi suggerisco di identificare i vostri early adopters, essi saranno di fondamentale importanza per pianificare la strategia iniziale."
+      }
+      ,
+      "lc11": {
+        "input": "Lean canvas non allineato a 4P",
+        "outputSingolare": "Ti suggerisco di allineare il lean canvas al framework 4P. In particolare, ... ",
+        "outputPlulare": "Ti suggerisco di allineare il lean canvas al framework 4P.  In particolare, ... "
       }
     }
   }
