@@ -13,7 +13,7 @@
       "mm3": {
         "input": "Product approssimativo",
         "outputSingolare": "Nella sezione product dovresti esplicitare chiaramente tutte le caratteristiche del tuo prodotto/servizio. Dovresti dettagliare come tutti gli utenti interagiranno con il tuo prodotto e dettagliare al meglio ogni processo e funzionalità. Un maggior focus su questa sezione ti semplificherà moltissimo il lavoro di stesura del business plan",
-        "outputPlulare": "Nella sezione product dovreste esplicitare chiaramente tutte le caratteristiche del vostro prodotto/servizio. Dovreste dettagliare come tutti gli utenti interagiranno con il vostro prodotto e dettagliare al meglio ogni processo e funzionalità. Un maggior focus su questa sezione ti semplificherà moltissimo il lavoro di stesura del business plan"
+        "outputPlulare": "Nella sezione product dovreste esplicitare chiaramente tutte le caratteristiche del vostro prodotto/servizio. Dovreste dettagliare come tutti gli utenti interagiranno con il vostro prodotto e dettagliare al meglio ogni processo e funzionalità. Un maggior focus su questa sezione vi semplificherà moltissimo il lavoro di stesura del business plan"
       },
       "mm4": {
         "input": "Price approssimativo",
@@ -31,9 +31,9 @@
         "outputPlulare": "Vi consiglio di andare più nello specifico. Partite dai canali considerati nel lean canvas dividendo eventuali distinzioni tra online ed offline ed argomentando se i diversi canali hanno target customers differenti."
       },
       "mm7": {
-        "input": "Manca tone of voice e intensità",
-        "outputSingolare": "Questo aspetto sarà chiave per ottenere una massa critica per il tuo progetto, dunque oltre ai canali ti consiglio di cominciare anche a definire il tone of voice e l'intensità di utilizzo di ciascun canale individuato.",
-        "outputPlulare": "Questo aspetto sarà chiave per ottenere una massa critica per il vostro progetto, dunque oltre ai canali vi consiglio di cominciare anche a definire il tone of voice e l'intensità di utilizzo di ciascun canale individuato."
+        "input": "Promotion: Manca tone of voice e intensità ",
+        "outputSingolare": "La sezione promotion è fondamentale per raggiungere i tuoi clienti e ottenere una massa critica per il tuo progetto.Oltre ai canali (e.g., offline e online) ti consiglio di cominciare anche a definire il tone of voice e l’intensità di utilizzo di ciascun canale individuato.",
+        "outputPlulare": "La sezione promotion è fondamentale per raggiungere i tuoi clienti e ottenere una massa critica per il tuo progetto.Oltre ai canali (e.g., offline e online) ti consiglio di cominciare anche a definire il tone of voice e l’intensità di utilizzo di ciascun canale individuato."
       },
       "mm8": {
         "input": "Place fuori focus",
@@ -158,8 +158,8 @@
       },
       "fm3": {
         "input": "Intervallo di tempo minore di 7 giorni",
-        "outputSingolare": "Ti raccomando di svolgere lo smoke test in un intervallo di tempo di almeno una settimana, per dare il tempo all'aLgoritmo di facebook di imparare e avere un periodo di tempo per ottenere dei risultati attendibili.",
-        "outputPlulare": "Vi raccomando di svolgere lo smoke test in un intervallo di tempo di almeno una settimana, per dare il tempo all'aLgoritmo di facebook di imparare e avere un periodo di tempo per ottenere dei risultati attendibili."
+        "outputSingolare": "Ti raccomando di svolgere lo smoke test in un intervallo di tempo di almeno una settimana, per dare il tempo all'algoritmo di facebook di imparare e avere un periodo di tempo per ottenere dei risultati attendibili.",
+        "outputPlulare": "Vi raccomando di svolgere lo smoke test in un intervallo di tempo di almeno una settimana, per dare il tempo all'algoritmo di facebook di imparare e avere un periodo di tempo per ottenere dei risultati attendibili."
       },
       "fm4": {
         "input": "Non definito Budget",
@@ -192,7 +192,7 @@
     "leanCanvas2": {
       "lc1": {
         "input": "Se lean canvas fatto bene",
-        "outputSingolare": "Hai creato un ottimo lean canvas. Sarà fondamentale tenerlo aggiornato e testare le varie assunzioni che ci sono all'interno durante il continuo del vostro progetto.",
+        "outputSingolare": "Hai creato un ottimo lean canvas. Sarà fondamentale tenerlo aggiornato e testare le varie assunzioni che ci sono all'interno durante il continuo del vostro progetto. ",
         "outputPlulare": "Avete creato un ottimo lean canvas. Sarà fondamentale tenerlo aggiornato e testare le varie assunzioni che ci sono all'interno durante il continuo del vostro progetto."
       },
       "lc2": {
