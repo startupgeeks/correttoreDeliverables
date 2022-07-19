@@ -138,13 +138,22 @@
         "input": "Poche CTA",
         "outputSingolare": "Nella landing page noto solo # CTA. Lo scopo della landing page è generare lead, per facilitare un utente a fare ciò sarebbe meglio provare ad inserire una CTA (NOME DELLA CTA USATA) in quasi ogni sezione.",
         "outputPlulare": "Nella landing page noto solo # CTA. Lo scopo della landing page è generare lead, per facilitare un utente a fare ciò sarebbe meglio provare ad inserire una CTA (NOME DELLA CTA USATA) in quasi ogni sezione."
+      }      ,
+      "lp11": {
+        "input": "se manca sezione come funziona",
+        "outputSingolare": "Manca una sezione che spieghi il 'come funziona'. Sarebbe importante far capire all'utente quali sono i passaggi che deve fare per prenotare uno dei servizi offerti dalla tua soluzione. Ad esempio: ***",
+        "outputPlulare": "Manca una sezione che spieghi il 'come funziona'. Sarebbe importante far capire all'utente quali sono i passaggi che deve fare per prenotare uno dei servizi offerti dalla vostra soluzione. Ad esempio: ***"
+      }, "lp12": {
+        "input": "se vantaggi non chiari",
+        "outputSingolare": " Ti consiglio di rivedere la sezione dei vantaggi cercando di far leva sui problemi e i bisogno che avete individuato durante la validazione.",
+        "outputPlulare": "Vi consiglio di rivedere la sezione dei vantaggi cercando di far leva sui problemi e i bisogno che avete individuato durante la validazione."
       },
-       "lp11": {
+       "lp13": {
         "input": "Ottimo lavoro :D",
         "outputSingolare": "In conclusione, hai fatto un ottimo lavoro, la landing page è chiara e permette di capire la tua offerta di valore. Ci auspichiamo otterrai risposte positive dal mercato tramite lo smoke test.",
         "outputPlulare": "In conclusione, avete fatto un ottimo lavoro, la landing page è chiara, permette di capire la vostra offerta di valore e inspira la fiducia degli utenti. Ci auspichiamo otterrete risposte positive dal mercato tramite lo smoke test."
       },
-      "lp12": {
+      "lp14": {
         "input": "Lavoro mediocre :(",
         "outputSingolare": "In conclusione, la landing page non è chiara, non si comprende la tua offerta di valore e potrebbe non suscitare la fiducia degli utenti. Ti suggerisco di rivederla prima di iniziare lo smoke test.",
         "outputPlulare": "In conclusione, la landing page non è chiara, non si comprende la vostra offerta di valore e potrebbe non suscitare la fiducia degli utenti. Vi suggerisco di rivederla prima di iniziare lo smoke test."
