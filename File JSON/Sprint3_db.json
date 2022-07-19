@@ -63,7 +63,7 @@
         "outputPlulare": "Ottimo lavoro per la UVP. Mi riesce a trasmettere esattamente le caratteristiche del progetto! Benissimo!"
       },
       "uvp2": {
-        "input": "Breve e chiara",
+        "input": "No Breve e chiara",
         "outputSingolare": "Ti ricordo che la UVP deve essere breve e chiara. Essa deve permettere a chi non conosce la tua startup di capire di che cosa si occupa in toto senza equivocità. Cerca di stringere la UVP in quanto può essere eccessivamente lunga ( la tua UVP ha X caratteri, una buona UVP sta in media tra i 70-140 caratteri).",
         "outputPlulare": "Vi ricordo che la UVP deve essere breve e chiara. Essa deve permettere a chi non conosce la vostra startup di capire di che cosa si occupa in toto senza equivocità. Cercate di stringere la UVP in quanto può essere eccessivamente lunga ( la vostra UVP ha X caratteri, una buona UVP sta in media tra i 70-140 caratteri)."
       },
