@@ -6,4 +6,4 @@ let textDB = '{ "marketingMix": { "mm1": { "input": "Se perfetto", "outputSingol
 
 const db = JSON.parse(textDB);
 
-console.log(db);
+//console.log(db);

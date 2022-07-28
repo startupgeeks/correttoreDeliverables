@@ -97,7 +97,7 @@ function addOutcome(nameSection,idSection, listSection,title,isSingolare){
     for (let key in listSection) {
         //console.log(listSection);
         x=x+1;
-        console.log(x);
+        //console.log(x);
         if(isSingolare){
             if(addTextIntoFeedback('.'.concat(nameSection).concat(x.toString()),idSection.toUpperCase().concat(x.toString()),listSection[key].outputSingolare)){
                 contatoreTitle=contatoreTitle+1;

@@ -6,4 +6,4 @@ let textDB = '{ "analisiSmokeTest": { "ast1": { "input": "Intro", "outputSingola
 
 const db = JSON.parse(textDB);
 
-console.log(db);
+//console.log(db);
