@@ -111,8 +111,8 @@
     },
     "fp3": {
       "input": "Se non hanno messo le formule",
-      "outputSingolare": "Attenzione, non avendo inserito le formule e le assumption di base mi è impossibile giudicare la qualità del documento.",
-      "outputPlulare": "Attenzione, non avendo inserito le formule e le assumption di base mi è impossibile giudicare la qualità del documento."
+      "outputSingolare": "Attenzione, non avendo inserito le formule e le assumption di base mi è molto difficile giudicare la qualità del documento.",
+      "outputPlulare": "Attenzione, non avendo inserito le formule e le assumption di base mi è difficile giudicare la qualità del documento."
     },
     "fp4": {
       "input": "Se stipendi in cifra netta e non lorda",
