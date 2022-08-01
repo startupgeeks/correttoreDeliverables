@@ -57,7 +57,7 @@ function endMessage(isSingular) {
     let valueRadioButtonValutation = document.querySelector('input[name="valutazione"]:checked').value;
     if(isSingular){
         if(valueRadioButtonValutation.localeCompare("medium")==0){
-            document.getElementById("end").innerHTML = "Ben fatto! Ti invito però a compilare nuovamente *xxx* e rivedere gli altri output in base ai suggerimenti indicati. Cerca di seguire i consigli di questo feedback per concentrarti sugli elementi principali del progetto in modo da mantenere il focus e gestire al meglio la complessità dei prossimi Sprint. In bocca al lupo per il quinto sprint!";
+            document.getElementById("end").innerHTML = "Ben fatto! Ti invito però a compilare nuovamente *xxx* e rivedere gli altri output in base ai suggerimenti indicati. Cerca di seguire i consigli di questo feedback per concentrarti sugli elementi principali del progetto in modo da mantenere il focus e gestire al meglio la complessità del prossimo Sprint. In bocca al lupo per il quinto sprint!";
         } else if(valueRadioButtonValutation.localeCompare("bad")==0){
             document.getElementById("end").innerHTML = "Ti invito a provare a rivedere i deliverables di questo sprint tenendo a mente i suggerimenti del feedback. In bocca al lupo per il quinto sprint!";
         } else if(valueRadioButtonValutation.localeCompare("good")==0){
@@ -65,7 +65,7 @@ function endMessage(isSingular) {
         }
     }else{
         if(valueRadioButtonValutation.localeCompare("medium")==0){
-            document.getElementById("end").innerHTML = "Ben fatto! Vi invito però a compilare nuovamente *xxx* e rivedere gli altri output in base ai suggerimenti indicati. Cercate di seguire i consigli di questo feedback per concentrarvi sugli elementi principali del progetto in modo da mantenere il focus e gestire al meglio la complessità dei prossimi Sprint. In bocca al lupo per il quinto sprint!";
+            document.getElementById("end").innerHTML = "Ben fatto! Vi invito però a compilare nuovamente *xxx* e rivedere gli altri output in base ai suggerimenti indicati. Cercate di seguire i consigli di questo feedback per concentrarvi sugli elementi principali del progetto in modo da mantenere il focus e gestire al meglio la complessità del prossimo Sprint. In bocca al lupo per il quinto sprint!";
         } else if(valueRadioButtonValutation.localeCompare("bad")==0){
             document.getElementById("end").innerHTML = "Vi invito a provare a rivedere i deliverables di questo sprint tenendo a mente i suggerimenti del feedback. In bocca al lupo per il quinto sprint!";
         } else if(valueRadioButtonValutation.localeCompare("good")==0){
