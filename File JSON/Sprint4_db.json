@@ -34,8 +34,8 @@
     },
     "bp3": {
       "input": "Se non mettono contatti in cover page",
-      "outputSingolare": "Ti consiglio di inserire oltre al nome e logo della startup i tuoi contatti. Un investitore che legge il tuo Business Plan deve sapere come e chi contattare in caso di interesse.",
-      "outputPlulare": "Vi consiglio di inserire oltre al nome e logo della startup un contatto personale (email). Un investitore che legge il vostro Business Plan deve sapere come e chi contattare in caso di interesse."
+      "outputSingolare": "Ti consiglio di inserire oltre al nome e logo della startup i tuoi contatti nella cover page. Un investitore che legge il tuo Business Plan deve sapere come e chi contattare in caso di interesse.",
+      "outputPlulare": "Vi consiglio di inserire oltre al nome e logo della startup un contatto personale (email) nella cover page. Un investitore che legge il vostro Business Plan deve sapere come e chi contattare in caso di interesse."
     },
     "bp4": {
       "input": "Executive Summary fatto male",
