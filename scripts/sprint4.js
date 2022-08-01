@@ -32,7 +32,7 @@ function correggi() {
 function greeting(isSingular) {
 
     if(isSingular){
-        document.getElementById("intro_pt1").innerHTML = "spero che il tuo percorso stia proseguendo alla grande, siamo nella fase centrale dello Startup Builder!";
+        document.getElementById("intro_pt1").innerHTML = "spero che il tuo percorso stia proseguendo alla grande, siamo nel punto di svolta dello Startup Builder!";
         
         if(document.querySelector('input[name="mentor"]:checked').value.localeCompare("si")){
             document.getElementById("intro_pt2").innerHTML = "Ho guardato i tuoi deliverables e qui di seguito lascio qualche appunto su come migliorare il tuo lavoro, utilizza questi spunti anche per confrontarti con il mentor che sono sicuro ti darà consigli utili per continuare al meglio!";
@@ -41,7 +41,7 @@ function greeting(isSingular) {
         }
     }else{
         //GREETING
-        document.getElementById("intro_pt1").innerHTML = "spero che il vostro percorso stia proseguendo alla grande, siamo nella fase centrale dello Startup Builder!";
+        document.getElementById("intro_pt1").innerHTML = "spero che il vostro percorso stia proseguendo alla grande, siamo nel punto di svolta  dello Startup Builder!";
         
         if(document.querySelector('input[name="mentor"]:checked').value.localeCompare("si")){
             document.getElementById("intro_pt2").innerHTML = "Ho guardato i vostri deliverables e qui di seguito lascio qualche appunto su come migliorare il vostro lavoro, utilizzate questi spunti anche per confrontarvi con il mentor che sono sicuro vi darà consigli utili per continuare al meglio!";
