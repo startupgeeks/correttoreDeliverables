@@ -6,4 +6,39 @@ let textDB = '{ "analisiSmokeTest": { "ast1": { "input": "Intro", "outputSingola
 
 const db = JSON.parse(textDB);
 
-//console.log(db);
+console.log(db);
+
+getapi("https://x8ki-letl-twmt.n7.xano.io/api:WlorS6IK/sprint_4")
+
+async function getapi(url) {
+    let response = await fetch(url);
+
+    if (response.ok) { // if HTTP-status is 200-299
+    // get the response body (the method explained below)
+        let json = await response.json();
+        console.log(json);
+        for (let i in json){
+            console.log(i)
+            //CREARE DB sul modello di quello fatto 
+        }
+    } else {
+    alert("HTTP-Error: " + response.status);
+    }
+
+
+}
+
+/*
+fetch('https://x8ki-letl-twmt.n7.xano.io/api:WlorS6IK/sprint_4')
+  .then(response => {
+    //handle response            
+    console.log(response.json());
+    for (let r of response.json()){
+        console.log(r)
+    }
+    
+  })
+  .then((data) => console.log(data))
+  .catch(error => {
+    console.log(error)
+  });*/
