@@ -19,6 +19,16 @@
       "input": "Se hanno fatto delle riflessioni finali",
       "outputSingolare": "L’approccio utilizzato per le riflessioni è ottimo ed esattamente ciò che serve per migliorare le proprie metriche, trovare altri canali d’acquisto (a volte più efficaci) e costruire previsioni finanziarie che sono sensibili sulla base di quanto effettivamente riscontrato.",
       "outputPlulare": "L’approccio utilizzato per le riflessioni è ottimo ed esattamente ciò che serve per migliorare le proprie metriche, trovare altri canali d’acquisto (a volte più efficaci) e costruire previsioni finanziarie che sono sensibili sulla base di quanto effettivamente riscontrato."
+    },
+    "ast5": {
+      "input": "Se NON hanno inserito riflessioni finali",
+      "outputSingolare": "Vi consiglio, oltre ad aver riportato i dati, di inserire un paragrafetto in cui fate delle considerazioni rispetto ai dati ottenuti. Per esempio quale ad set (i.e., gruppo di inserzioni) ha performato meglio, su cosa bisogna cambiare sulle prossime campagne, quale target vi ha dato una maggior impressione.",
+      "outputPlulare": "Vi consiglio, oltre ad aver riportato i dati, di inserire un paragrafetto in cui fate delle considerazioni rispetto ai dati ottenuti. Per esempio quale ad set (i.e., gruppo di inserzioni) ha performato meglio, su cosa bisogna cambiare sulle prossime campagne, quale target vi ha dato una maggior impressione."
+    },
+    "ast6": {
+      "input": "Se smoke test assente :(",
+      "outputSingolare": "Purtroppo non hai caricato nessun report al momento. Ti consiglio di continuare lo smoke test e analizzare i dati appena disponibili.",
+      "outputPlulare": "Purtroppo non avete caricato nessun report al momento. Vi consiglio di continuare lo smoke test e analizzare i dati appena disponibili."
     }
   },
   "businessPlan": {
@@ -170,6 +180,11 @@
       "outputPlulare": "Attenzione: l'acquisizione degli asset nella categoria CAPEX nel cash flow statement è senza il segno meno."
     },
     "fp15": {
+      "input": "Se spesa marketing sempre uguale, ma aumentano clienti e fatturato",
+      "outputSingolare": "Stimi una crescita costante negli anni del numero di clienti, a cui però dovrebbe coincidere anche un aumento della spesa di marketing e comunicazione, altrimenti come faranno i clienti a sapere che offrite questi prodotti/servizi? Ti consiglio di rivedere la spesa allocata al marketing nel periodo analizzato.",
+      "outputPlulare": "Stimate una crescita costante negli anni del numero di clienti, a cui però dovrebbe coincidere anche un aumento della spesa di marketing e comunicazione, altrimenti come faranno i vostri a clienti a sapere che voi offrite questi prodotti/servizi? Vi consiglio di rivedere la spesa allocata al marketing nel periodo analizzato."
+    },
+    "fp16": {
       "input": "Se lavoro buono, spunto aggiuntivo di analisi sensibilità (ATTENZIONE a non averlo già usato)",
       "outputSingolare": "Ad ogni modo ottimo lavoro, per migliorare ti suggerisco di svolgere un’analisi di sensitività per verificare la robustezza delle conclusioni. Se i risultati fossero ancora solidi con ipotesi/scenari diversi, ciò rafforzerebbe la tua credibilità.",
       "outputPlulare": "Ad ogni modo ottimo lavoro, per migliorare vi suggerisco di svolgere un’analisi di sensitività per verificare la robustezza delle conclusioni. Se i risultati fossero ancora solidi con ipotesi/scenari diversi, ciò rafforzerebbe la vostra credibilità."
