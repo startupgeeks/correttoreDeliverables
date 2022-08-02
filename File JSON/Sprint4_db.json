@@ -140,16 +140,36 @@
       "outputPlulare": "Gli OPEX sono i costi di gestione non sono direttamente proporzionali alla crescita dei ricavi, ma sono i costi che sostengono la crescita della startup, dunque ricordate di valutarli attentamente!"
     },
     "fp9": {
-      "input": "Se spese di sviluppo in IT",
+      "input": "Se spese di sviluppo in IT e non CAPEX",
       "outputSingolare": "Le spese di sviluppo app, piattaforma, software proprietario vanno inserite all'interno dei CAPEX non nei costi IT.",
       "outputPlulare": "Le spese di sviluppo app, piattaforma, software proprietario vanno inserite all'interno dei CAPEX non nei costi IT."
     },
     "fp10": {
-      "input": "Se costi Marketing a caso e senza assumption",
-      "outputSingolare": "Utilizza i costi e le metriche ottenute dallo smoke test per generare i costi del marketing.",
-      "outputPlulare": "Utilizzate i costi e le metriche ottenute dallo smoke test per generare i costi del marketing."
+      "input": "Se spesa HR superiore al 50% del totale ",
+      "outputSingolare": "Attenzione alla quota relativa alle spese di HR che avete inserito. Capisco che le risorse umane saranno un importante asset aziendale, allo stesso tempo indicare al primo anno una quota superiore al 50% potrebbe non essere apprezzato da potenziali investitori.",
+      "outputPlulare": "Attenzione alla quota relativa alle spese di HR che avete inserito. Capisco che le risorse umane saranno il vostro asset aziendale, allo stesso tempo indicare al primo anno una quota superiore al 50% potrebbe non essere apprezzato da potenziali investitori."
     },
     "fp11": {
+      "input": "Se spese di sviluppo in IT",
+      "outputSingolare": "Le spese di sviluppo app, piattaforma, software proprietario vanno inserite all'interno dei CAPEX non nei costi IT.",
+      "outputPlulare": "Le spese di sviluppo app, piattaforma, software proprietario vanno inserite all'interno dei CAPEX non nei costi IT."
+    },
+    "fp12": {
+      "input": "Se cumulated cash flow troppo basso (<5k€)",
+      "outputSingolare": "Ti suggerisco di fare una riflessione sul cumulated cash flow ipotizzato nel anno ***X*** di ***Y*** perchè potrebbe essere un buffer non sufficiente in caso di imprevisti, costi sottostimati o ricavi sovrastimati.",
+      "outputPlulare": "Vi suggerisco di fare una riflessione sul cumulated cash flow ipotizzato nel anno ***X*** di ***Y*** perchè potrebbe essere un buffer non sufficiente in caso di imprevisti, costi sottostimati o ricavi sovrastimati."
+    },
+    "fp13": {
+      "input": "Se cumulated cash flow negativo",
+      "outputSingolare": "Attenzione: il cumulated cash flow non deve mai essere negativo perché equivale a fallire. Dovresti aumentare l'investimento iniziale o ridurre i costi per evitare uno scenario con cassa in rosso.",
+      "outputPlulare": "Attenzione: il cumulated cash flow non deve mai essere negativo perché equivale a fallire. Dovreste aumentare l'investimento iniziale o ridurre i costi per evitare uno scenario con cassa in rosso."
+    },
+    "fp14": {
+      "input": "Acquisition of assets in CAPEX senza segno meno",
+      "outputSingolare": "Attenzione: l'acquisizione degli asset nella categoria CAPEX nel cash flow statement è senza il segno meno.",
+      "outputPlulare": "Attenzione: l'acquisizione degli asset nella categoria CAPEX nel cash flow statement è senza il segno meno."
+    },
+    "fp15": {
       "input": "Se lavoro buono, spunto aggiuntivo di analisi sensibilità (ATTENZIONE a non averlo già usato)",
       "outputSingolare": "Ad ogni modo ottimo lavoro, per migliorare ti suggerisco di svolgere un’analisi di sensitività per verificare la robustezza delle conclusioni. Se i risultati fossero ancora solidi con ipotesi/scenari diversi, ciò rafforzerebbe la tua credibilità.",
       "outputPlulare": "Ad ogni modo ottimo lavoro, per migliorare vi suggerisco di svolgere un’analisi di sensitività per verificare la robustezza delle conclusioni. Se i risultati fossero ancora solidi con ipotesi/scenari diversi, ciò rafforzerebbe la vostra credibilità."
