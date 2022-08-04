@@ -27,11 +27,11 @@ async function getDB(url) {
             deliverableName= json[i]["DeliverablesName"];
             codiceUnivoco = json[i]["Codice_univoco"]; //e.g., ast1, bp1, bp2
             let dictTemp = {input: json[i]["Input"],outputPlulare:json[i]["outputPlulare"],outputSingolare:json[i]["outputSingolare"]};
-            console.log(deliverableName)
+            /*console.log(deliverableName)
             console.log(codiceUnivoco)
             console.log(dictTemp)
             console.log(db[deliverableName])
-            console.log(db[deliverableName][codiceUnivoco])
+            console.log(db[deliverableName][codiceUnivoco])*/
             db[deliverableName][codiceUnivoco]=dictTemp;
             
         }

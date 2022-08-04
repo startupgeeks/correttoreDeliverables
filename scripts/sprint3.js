@@ -59,7 +59,7 @@ function greeting(isSingular) {
 
 
 function endMessage(isSingular) {
-    
+    console.log("ARRIVA QUI")
     let valueRadioButtonValutation = document.querySelector('input[name="valutazione"]:checked').value;
     if(isSingular){
         if(valueRadioButtonValutation.localeCompare("medium")==0){
@@ -70,6 +70,7 @@ function endMessage(isSingular) {
             document.getElementById("end").innerHTML = "Hai davvero eccelso in questo sprint! Lo smoke test sarà fondamentale per ottenere le prime metriche e capire se fosse necessario un pivot. In bocca al lupo per il prossimo sprint!";
         }
     }else{
+        console.log("ARRIVA QUI")
         if(valueRadioButtonValutation.localeCompare("medium")==0){
             document.getElementById("end").innerHTML = "Ben fatto! Vi invito però a rivedere nuovamente i documenti in base ai suggerimenti indicati. Lo smoke test sarà fondamentale per ottenere le prime metriche e capire se fosse necessario un pivot. In bocca al lupo per il prossimo sprint!";
         } else if(valueRadioButtonValutation.localeCompare("bad")==0){
@@ -90,8 +91,10 @@ function copyEvent(id) {
 function addOutcome(nameSection,idSection, listSection,title,isSingolare){
     let x=0;
     let contatoreTitle=0;
+    if(document.getElementsByClassName("Commento_personalizzato_".concat(idSection.toLowerCase()))[0]!=undefined || document.getElementsByClassName("Commento_personalizzato_".concat(idSection.toLowerCase()))[0]!=null){
+        document.getElementById("Commento_personalizzato_".concat(idSection.toLowerCase() )).innerHTML = document.getElementsByClassName("Commento_personalizzato_".concat(idSection.toLowerCase()))[0].value; 
+    }
 
-    document.getElementById("Commento_personalizzato_".concat(idSection.toLowerCase() )).innerHTML = document.getElementsByClassName("Commento_personalizzato_".concat(idSection.toLowerCase()))[0].value; 
     
     
     for (let key in listSection) {
@@ -112,10 +115,12 @@ function addOutcome(nameSection,idSection, listSection,title,isSingolare){
         }
         
     }
-
-    if(contatoreTitle>0 || document.getElementById("Commento_personalizzato_".concat(idSection.toLowerCase())).innerHTML.length>0){
-        document.getElementById("Title_".concat(idSection.toLowerCase())).innerHTML = title;
+    if(document.getElementsByClassName("Commento_personalizzato_".concat(idSection.toLowerCase()))[0]!=undefined || document.getElementsByClassName("Commento_personalizzato_".concat(idSection.toLowerCase()))[0]!=null){
+        if(contatoreTitle>0 || document.getElementById("Commento_personalizzato_".concat(idSection.toLowerCase())).innerHTML.length>0){
+            document.getElementById("Title_".concat(idSection.toLowerCase())).innerHTML = title;
+        }
     }
+ 
 
 }
 
