@@ -1,8 +1,8 @@
 'use strict';
 
+
 function correggi() {
 
-    
     document.getElementById("NOME").innerHTML = document.getElementsByClassName("name")[0].value.trim();
 
     if(document.querySelector('input[name="dimensioni_team"]:checked').value.localeCompare("singolare")) {
@@ -82,14 +82,13 @@ function copyEvent(id) {
 }
 
 function addOutcome(nameSection,idSection, listSection,title,isSingolare){
+    //NB: funziona solo con al più 9 checkboses segnati
     let x=0;
     let contatoreTitle=0;
-
     document.getElementById("Commento_personalizzato_".concat(idSection.toLowerCase() )).innerHTML = document.getElementsByClassName("Commento_personalizzato_".concat(idSection.toLowerCase()))[0].value; 
     
-    
     for (let key in listSection) {
-        //console.log(listSection);
+        //console.log(key.toUpperCase());
         x=x+1;
         //console.log(x);
         if(isSingolare){
@@ -101,7 +100,7 @@ function addOutcome(nameSection,idSection, listSection,title,isSingolare){
         else{
             if(addTextIntoFeedback('.'.concat(nameSection).concat(x.toString()),idSection.toUpperCase().concat(x.toString()),listSection[key].outputPlulare)){
                 contatoreTitle=contatoreTitle+1;
-                console.log('.'.concat(nameSection).concat(x.toString()));
+                //console.log(idSection.toUpperCase().concat(x.toString()));
            }
         }
         
@@ -114,12 +113,16 @@ function addOutcome(nameSection,idSection, listSection,title,isSingolare){
 }
 
 
-function addTextIntoFeedback(sel,idFeedbackBefore,idFeedbackAfter){
+function addTextIntoFeedback(sel,idFeedbackBefore,feedbackText){
     try{
-        
+     //console.log(sel)
+     //console.log(document.querySelector(sel.concat(':checked')).value)
      if(document.querySelector(sel.concat(':checked')).value){
-        //console.log(sel);
-        document.getElementById(idFeedbackBefore).innerHTML = idFeedbackAfter+"</br>";
+        
+        /*console.log(sel);
+        console.log(idFeedbackBefore);
+        console.log(idFeedbackAfter);*/
+        document.getElementById(idFeedbackBefore).innerHTML = feedbackText+"</br>";
         return true;
         }
         return false;

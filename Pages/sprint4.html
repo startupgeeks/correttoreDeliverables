@@ -65,47 +65,77 @@
             <br>
             <!-- fine GENERALE -->
 
-              <!-- GET OUT OF THE BUILDING-->
             <h2 class="titoloDeliverable"> Analisi smoke test</h2>  
             <div id="analisiSmokeTestInput"></div>
             <h2 class="titoloDeliverable"> Business Plan</h2>  
             <div id="businessPlanInput"></div>
             <h2 class="titoloDeliverable">Financial Plan</h2>  
             <div id="financialPlanInput"></div>
-
-            <script>
+            <script type ="text/javascript">
                 
-                for (let key1 in db){
+              //NB: solo dopo GET DB popolo la checklist
+              getDB("https://x8ki-letl-twmt.n7.xano.io/api:WlorS6IK/sprint_4").then(
+                function(){
+                  //console.log(db);
+                  for (let key1 in db){
                     let gal = document.getElementById(key1.concat('Input'));
                     let nameSection = key1.charAt(0).toUpperCase()+ key1.slice(1);
+                    //console.log("Il nome della sezione è",nameSection);
                     
-                    //console.log(nameSection);
                     let tag =""; //Per commento personalizzato
-                    for(let key2 in db[key1]){
+                      for(let key2 in db[key1]){  
                         if(tag==""){
-                             tag = key2.slice(0, -1).toLowerCase(); //x SISTEMARE IL DISCORSO DEL CASO IN CUI CI FOSSERO 2 NUMERI FINALI
+                            tag = key2.slice(0, -1).toLowerCase(); //x SISTEMARE IL DISCORSO DEL CASO IN CUI CI FOSSERO 2 NUMERI FINALI
                         }
-                        console.log(tag);
+                        //console.log("DEBUG"); 
                         //console.log(db[key1][key2]);
                         //console.log(key2.charAt(key2.length - 1));
-
-                        //SE è UN NUMERO MINORE DI 10
+            
+                         //SE è UN NUMERO Maggiore DI 10
                         if(key2.charAt(key2.length - 2)>= '0' && key2.charAt(key2.length - 2)<= '9'){
                           //IN QUESTO CASO è MAGGIORE DI 10
-                          gal.innerHTML += '<div class="checkbox_container" data-namecomponent="'+nameSection+key2.slice(-2)+'" style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_'+key2.toUpperCase()+'""></span></label><br><br>';
-
+                          console.log(nameSection+key2.slice(-2))
+                          //gal.innerHTML += '<div class="checkbox_container" data-namecomponent="'+nameSection+key2.slice(-2)+'" style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_'+key2.toUpperCase()+'""></span></label><br><br>';
+                          gal.innerHTML += '<input type="checkbox" style="float:left;" class="'+nameSection+key2.slice(-2)+'" id="'+nameSection+key2.slice(-2)+'" name="'+nameSection+key2.slice(-2)+'"/>';
+                          gal.innerHTML += '<label for="'+nameSection+key2.slice(-2)+'"> <span style="padding-left: 1%;" id="Input_'+key2.toUpperCase()+'""></span></label><br><br>';
+                          //<input type="checkbox" class="JavelinBoard1" id="JavelinBoard1" name="JavelinBoard1"/>
+                          //<label for="JavelinBoard1"> <span id="Input_JB1"></span></label><br>
                         }else{
                           //IN QUESTO CASO è MINORE DI 10
-                          gal.innerHTML += '<div class="checkbox_container" data-namecomponent="'+nameSection+key2.charAt(key2.length - 1)+'" style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_'+key2.toUpperCase()+'""></span></label><br><br>';
-
+                          //gal.innerHTML += '<div class="checkbox_container" data-namecomponent="'+nameSection+key2.charAt(key2.length - 1)+'" style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_'+key2.toUpperCase()+'""></span></label><br><br>';
+                          gal.innerHTML += '<input type="checkbox" style="float:left;" class="'+nameSection+key2.charAt(key2.length - 1)+'" id="'+nameSection+key2.charAt(key2.length - 1)+'" name="'+nameSection+key2.charAt(key2.length - 1)+'"/>';
+                          gal.innerHTML += '<label  for="'+nameSection+key2.charAt(key2.length - 1)+'"> <span style="padding-left: 1%;" id="Input_'+key2.toUpperCase()+'""></span></label><br><br>';
                         }
                         //gal.innerHTML += '<div class="checkbox_container" data-namecomponent="'+nameSection+key2.charAt(key2.length - 1)+'" style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_'+key2.toUpperCase()+'""></span></label><br><br>';
                         document.getElementById("Input_"+key2.toUpperCase()).innerHTML=db[key1][key2].input;
-                    }
+                       }
                     //console.log("QUI:"+tag);
-                    gal.innerHTML += '<label for="Commento_personalizzato_'+tag.toLowerCase()+'">Ulteriore commento personalizzato su '+nameSection+'</label><br><textarea name="Commento_personalizzato_'+tag.toLowerCase()+'" name="Commento_personalizzato_'+tag.toLowerCase()+'" class="Commento_personalizzato_'+tag.toLowerCase()+'" cols="40" rows="5" style="border-width: medium ;border-color: #094074 red #094074 red;background-color: #d3fffedb;"></textarea>    '; 
-                }  
+                    gal.innerHTML += '<br><br><br><label for="Commento_personalizzato_'+tag.toLowerCase()+'">Ulteriore commento personalizzato su '+nameSection+'</label><br><textarea name="Commento_personalizzato_'+tag.toLowerCase()+'" name="Commento_personalizzato_'+tag.toLowerCase()+'" class="Commento_personalizzato_'+tag.toLowerCase()+'" cols="40" rows="5" style="border-width: medium ;border-color: #094074 red #094074 red;background-color: #d3fffedb;"></textarea>    '; 
+                  }
+                  //creazione elementi OUTCOMESS
+                  let cunterNumberOfElements = 0
+                  for (let key1 in db){
+                          
+                          let gal = document.getElementById('bodyOutcome');
+                          let tag =""; 
+                          cunterNumberOfElements = 0;
+                          for(let key2 in db[key1]){
+                              if( cunterNumberOfElements==0){
+                                  tag = key2.slice(0, -1).toLowerCase(); //x SISTEMARE IL DISCORSO DEL CASO IN CUI CI FOSSERO 2 NUMERI FINALI
+                                }
+                              cunterNumberOfElements = cunterNumberOfElements +1;
+                          }
+                          gal.innerHTML += '<b id="Title_'+tag+'""></b><div id="'+key1+'Outcomes"></div>';
+                          //console.log("numero di elemtni è"+cunterNumberOfElements);
+                          addOutcomes(tag.toUpperCase(),key1+"Outcomes",cunterNumberOfElements);
+                          gal.innerHTML += '<p id="Commento_personalizzato_'+tag.toLowerCase()+'"></p>';
+                    }  
+                }
+              )
+              
+              
             </script>
+            
             <!--
             <label for="Commento_personalizzato_mm">Ulteriore commento personalizzato sulla analisi di intervista e dati</label><br>
             <textarea name="Commento_personalizzato_mm" name="Commento_personalizzato_mm" class="Commento_personalizzato_mm" cols="40" rows="5" style="border-width: medium ;border-color: #094074 red #094074 red;background-color: #d3fffedb;"></textarea>           
@@ -156,25 +186,7 @@
           <p id="intro_pt2"></p>
 
           <div id="bodyOutcome"></div>
-          <script>
-            let cunterNumberOfElements = 0
-            for (let key1 in db){
-                    let gal = document.getElementById('bodyOutcome');
-                    let tag =""; 
-                    cunterNumberOfElements = 0;
-                    for(let key2 in db[key1]){
-                        if( cunterNumberOfElements==0){
-                            tag = key2.slice(0, -1).toLowerCase(); //x SISTEMARE IL DISCORSO DEL CASO IN CUI CI FOSSERO 2 NUMERI FINALI
-                            console.log(tag);
-                          }
-                        cunterNumberOfElements = cunterNumberOfElements +1;
-                    }
-                    gal.innerHTML += '<b id="Title_'+tag+'""></b><div id="'+key1+'Outcomes"></div>';
-                    //console.log("numero di elemtni è"+cunterNumberOfElements);
-                    addOutcomes(tag.toUpperCase(),key1+"Outcomes",cunterNumberOfElements);
-                    gal.innerHTML += '<p id="Commento_personalizzato_'+tag.toLowerCase()+'"></p>';
-                }  
-          </script>
+                      
           <br><br>
           <p id="end"></p>
         </div>  
@@ -183,12 +195,14 @@
 
 </body>
 
+
+
 <!--  #FOR PRODUCTION -->
 <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
 
 <!-- Load our React components. -->
-<script src="../Components/checkbox.js"></script>
-<script  src="../scripts/sprint4.js"></script>
 
+<script  src="../scripts/sprint4.js"></script>
+<script src="../Components/checkbox.js"></script>
 </html>
