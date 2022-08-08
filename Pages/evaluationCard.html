@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Evaluator Pitch Deck</title>
+  <link rel="icon" type="image/x-icon" href="../Assets/favicon.ico">
+
+  <link rel="stylesheet" href="../Style/pitchEvaluator.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../scripts/pitchCard.js"></script>
+
+<meta charset="UTF-8" />
+</head>
+<body>
+  
+    <div class="square center">
+      <div class="column center">
+        <h2>The average score is:</h2>
+        <h1 id="average"></h1>
+        <h1 id="average2"></h1>
+        <script>
+          document.getElementById("average").innerHTML = round((teamScore+timingScore+marketScore+businessModelScore+scalabilityScore+uniquenessScore+feasibilityScore+tractionScore)/8);
+          //document.getElementById("average2").innerHTML = (teamScore+timingScore+marketScore+businessModelScore+scalabilityScore+uniquenessScore+feasibilityScore+tractionScore)/8;
+        </script>
+      </div>
+
+      <div class="column">
+        <h1>Punto di forza</h1>
+        <h2 id="strength"></h2>
+        <script>
+          let strengths = strength();
+          for (let x in strengths){
+            document.getElementById("strength").innerHTML += strengths[x]+"<br>";
+          }
+        </script>
+        <h1>Punto di debolezza</h1>
+        <h2 id="weakness"></h2>
+        <script>
+          let weaknesses = weakness();
+          for (let x in weaknesses){
+            document.getElementById("weakness").innerHTML += weaknesses[x]+"<br>";
+          }
+        </script>
+
+      </div>
+
+      <div class="chartStyle">
+        <canvas id="myChart"></canvas>
+      </div>
+      
+    </div>
+
+    <script>
+
+        const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+      );
+    </script>
+</body>
+
+</html>
+  
