@@ -5,13 +5,20 @@
   <link rel="icon" type="image/x-icon" href="../Assets/favicon.ico">
 
   <link rel="stylesheet" href="../Style/pitchEvaluator.css">
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script  src="../scripts/pitchCard.js"></script>  
+  <script  src="../scripts/pitchDeckEvaluator.js"></script>  
 
 <meta charset="UTF-8" />
 </head>
 <body>
-  
+    
     <div class="square center">
-      <h1 class="titleSlider">Team</h1>
+      <div class="column">
+      <h1 class="titleSlider">CRITERI DI VALUTAZIONE</h1>
+
+       <h1 class="titleSlider">Team</h1>
         <div class="slidecontainer">
           <input type="range" min="0" max="10" value="5" class="slider" id="teamSlider">
           <p>Value: <span id="teamOutput"></span></p>
@@ -69,9 +76,23 @@
         </div>
         <br>
 
-
-        <script  src="../scripts/pitchDeckEvaluator.js"></script>  
+        
         <a type="button" class="btn" href="./evaluationCard.html?data1|data2|data3"> VALUTA </a>
+
+      </div>
+      <div class="colum">
+      <div class="chartStyle">
+        <canvas id="myChart"></canvas>
+      </div>
+      <script>
+
+        const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+      );
+    </script>
+      </div>
+
 
     </div>
 </body>
