@@ -89,16 +89,24 @@
                 <legend>Valutazione</legend>
                 <table>
                   <tr>
-                    <td> <input type="radio" name="valutazione" value="bad" /> <br></td>
-                    <td style="vertical-align: top;"><span style="padding-left: 5%">Negativo </span></td>
+                    <td> <input type="radio" name="valutazione" value="superBad" /> <br></td>
+                    <td style="vertical-align: top;"><span style="padding-left: 5%">Pessimo </span></td>
+                  </tr>
+                  <tr>
+                    <td><input type="radio" name="valutazione" value="bad"/> <br></td>
+                    <td style="vertical-align: top;"><span style="padding-left: 5%;">Negativo </span></td>
                   </tr>
                   <tr>
                     <td><input type="radio" name="valutazione" value="medium" checked/> <br></td>
                     <td style="vertical-align: top;"><span style="padding-left: 5%;white-space: nowrap;">Così così </span></td>
                   </tr>
                   <tr>
-                    <td><input type="radio" name="valutazione" value="good"/></td>
+                    <td><input type="radio" name="valutazione" value="good"/><br></td>
                     <td style="vertical-align: top;"><span style="padding-left: 5%;">Positivo </span></td>
+                  </tr>
+                  <tr>
+                    <td><input type="radio" name="valutazione" value="superGood"/><br></td>
+                    <td style="vertical-align: top;"><span style="padding-left: 5%;">Ottimo </span></td>
                   </tr>
                 </table>
             </fieldset>
@@ -122,10 +130,12 @@
           //console.log(db);
           for (let key1 in db){
             let gal = document.getElementById(key1.concat('Input'));
-            let nameSection = key1.charAt(0).toUpperCase()+ key1.slice(1);
+            let nameSection = key1.charAt(0).toUpperCase()+ key1.slice(1); //Prima lettera maiuscola 
+
             //console.log("Il nome della sezione è",nameSection);
-            
-            let tag =""; //Per commento personalizzato
+
+            if(nameSection!="Other"){
+              let tag =""; //Per commento personalizzato
               for(let key2 in db[key1]){  
                 console.log(key2)
                 if(tag==""){
@@ -156,6 +166,8 @@
                }
             //console.log("QUI:"+tag);
             gal.innerHTML += '<br><label for="Commento_personalizzato_'+tag.toLowerCase()+'">Ulteriore commento personalizzato su '+nameSection+'</label><br><textarea name="Commento_personalizzato_'+tag.toLowerCase()+'" name="Commento_personalizzato_'+tag.toLowerCase()+'" class="Commento_personalizzato_'+tag.toLowerCase()+'" cols="40" rows="5" style="border-width: medium ;border-color: #094074 red #094074 red;background-color: #d3fffedb;"></textarea>    '; 
+
+            }
           }
 
           //creazione DIV OUTCOMESS

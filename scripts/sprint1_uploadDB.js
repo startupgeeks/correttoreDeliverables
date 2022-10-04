@@ -26,14 +26,16 @@ async function getDB(url) {
         for (let i in json){
             deliverableName= json[i]["DeliverablesName"];
             codiceUnivoco = json[i]["Codice_univoco"]; //e.g., ast1, bp1, bp2
-            let dictTemp = {input: json[i]["Input"],outputPlulare:json[i]["outputPlulare"],outputSingolare:json[i]["outputSingolare"]};
-            /*console.log(deliverableName)
-            console.log(codiceUnivoco)
-            console.log(dictTemp)
-            console.log(db[deliverableName])
-            console.log(db[deliverableName][codiceUnivoco])*/
-            db[deliverableName][codiceUnivoco]=dictTemp;
-            
+            if(deliverableName!=null && deliverableName!=""&&codiceUnivoco!=null && codiceUnivoco!=""){
+                let dictTemp = {input: json[i]["Input"],outputPlulare:json[i]["outputPlulare"],outputSingolare:json[i]["outputSingolare"]};
+                /*console.log(deliverableName)
+                console.log(codiceUnivoco)
+                console.log(dictTemp)
+                console.log(db[deliverableName])
+                console.log(db[deliverableName][codiceUnivoco])*/
+                db[deliverableName][codiceUnivoco]=dictTemp;
+            }
+          
         }
         //console.log("ECCO QUI IL DIZIONARIO")
         //console.log(db);

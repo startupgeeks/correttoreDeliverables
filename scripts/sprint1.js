@@ -37,21 +37,21 @@ function correggi() {
 function greeting(isSingular) {
 
     if(isSingular){
-        document.getElementById("intro_pt1").innerHTML = "spero che il tuo percorso stia proseguendo alla grande, siamo nella fase centrale dello Startup Builder!";
+        //document.getElementById("intro_pt1").innerHTML = "spero che il tuo percorso stia proseguendo alla grande, siamo nella fase centrale dello Startup Builder!";
         
         if(document.querySelector('input[name="mentor"]:checked').value.localeCompare("si")){
-            document.getElementById("intro_pt2").innerHTML = "Ho guardato i tuoi deliverables e qui di seguito lascio qualche appunto su come migliorare il tuo lavoro, utilizza questi spunti anche per confrontarti con il mentor che sono sicuro ti darà consigli utili per continuare al meglio!";
+            document.getElementById("intro_pt2").innerHTML = db.other.introSiMentor.outputSingolare;
         } else if(document.querySelector('input[name="mentor"]:checked').value.localeCompare("no")){
-            document.getElementById("intro_pt2").innerHTML = "Ho guardato i tuoi deliverables e qui di seguito lascio qualche appunto su come migliorare il tuo lavoro, segui questi consigli e continua a razzo!";
+            document.getElementById("intro_pt2").innerHTML = db.other.introNoMentor.outputSingolare;
         }
     }else{
         //GREETING
-        document.getElementById("intro_pt1").innerHTML = "spero che il vostro percorso stia proseguendo alla grande, siamo nella fase centrale dello Startup Builder!";
+        //document.getElementById("intro_pt1").innerHTML = "spero che il vostro percorso stia proseguendo alla grande, siamo nella fase centrale dello Startup Builder!";
         
         if(document.querySelector('input[name="mentor"]:checked').value.localeCompare("si")){
-            document.getElementById("intro_pt2").innerHTML = "Ho guardato i vostri deliverables e qui di seguito lascio qualche appunto su come migliorare il vostro lavoro, utilizzate questi spunti anche per confrontarvi con il mentor che sono sicuro vi darà consigli utili per continuare al meglio!";
+            document.getElementById("intro_pt2").innerHTML = db.other.introSiMentor.outputPlulare;
         } else if(document.querySelector('input[name="mentor"]:checked').value.localeCompare("no")){
-            document.getElementById("intro_pt2").innerHTML = "Ho guardato i vostri deliverables e qui di seguito lascio qualche appunto su come migliorare il vostro lavoro, utilizzate questi spunti e continuate così!";
+            document.getElementById("intro_pt2").innerHTML = db.other.introNoMentor.outputPlulare;
         }
     }
 }
@@ -62,20 +62,27 @@ function endMessage(isSingular) {
     let valueRadioButtonValutation = document.querySelector('input[name="valutazione"]:checked').value;
     if(isSingular){
         if(valueRadioButtonValutation.localeCompare("medium")==0){
-            document.getElementById("end").innerHTML = "Ben fatto! Ti invito però a rivedere nuovamente i documenti in base ai suggerimenti indicati. Lo smoke test sarà fondamentale per ottenere le prime metriche e capire se fosse necessario un pivot. In bocca al lupo per il prossimo sprint!";
+            document.getElementById("end").innerHTML = db.other.endMedium.outputSingolare;
         } else if(valueRadioButtonValutation.localeCompare("bad")==0){
-            document.getElementById("end").innerHTML = "Ti consiglio di rivedere tutti i documenti caricati in questo sprintLo smoke test sarà fondamentale per ottenere le prime metriche e capire se fosse necessario un pivot. In bocca al lupo per il prossimo sprint!";
+            document.getElementById("end").innerHTML = db.other.endBad.outputSingolare;
         } else if(valueRadioButtonValutation.localeCompare("good")==0){
-            document.getElementById("end").innerHTML = "Hai davvero eccelso in questo sprint! Lo smoke test sarà fondamentale per ottenere le prime metriche e capire se fosse necessario un pivot. In bocca al lupo per il prossimo sprint!";
+            document.getElementById("end").innerHTML = db.other.endGood.outputSingolare;
+        }else if(valueRadioButtonValutation.localeCompare("superGood")==0){
+            document.getElementById("end").innerHTML = db.other.endSuperGood.outputSingolare;
+        }else if(valueRadioButtonValutation.localeCompare("superBad")==0){
+            document.getElementById("end").innerHTML = db.other.endSuperBad.outputSingolare;
         }
     }else{
-        //console.log("ARRIVA QUI")
         if(valueRadioButtonValutation.localeCompare("medium")==0){
-            document.getElementById("end").innerHTML = "Ben fatto! Vi invito però a rivedere nuovamente i documenti in base ai suggerimenti indicati. Lo smoke test sarà fondamentale per ottenere le prime metriche e capire se fosse necessario un pivot. In bocca al lupo per il prossimo sprint!";
+            document.getElementById("end").innerHTML = db.other.endMedium.outputPlulare;
         } else if(valueRadioButtonValutation.localeCompare("bad")==0){
-            document.getElementById("end").innerHTML = "Vi consiglio di rivedere tutti i documenti caricati in questo sprint. Lo smoke test sarà fondamentale per ottenere le prime metriche e capire se fosse necessario un pivot. In bocca al lupo per il prossimo sprint!";
+            document.getElementById("end").innerHTML = db.other.endBad.outputPlulare;
         } else if(valueRadioButtonValutation.localeCompare("good")==0){
-            document.getElementById("end").innerHTML = "Avete davvero eccelso in questo sprint! Lo smoke test sarà fondamentale per ottenere le prime metriche e capire se fosse necessario un pivot. In bocca al lupo per il prossimo sprint!";
+            document.getElementById("end").innerHTML = db.other.endGood.outputPlulare;
+        } else if(valueRadioButtonValutation.localeCompare("superGood")==0){
+            document.getElementById("end").innerHTML = db.other.endSuperGood.outputPlulare;
+        }else if(valueRadioButtonValutation.localeCompare("superBad")==0){
+            document.getElementById("end").innerHTML = db.other.endSuperBad.outputPlulare;
         }
     }
 }
