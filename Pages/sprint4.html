@@ -83,6 +83,9 @@
                     //console.log("Il nome della sezione è",nameSection);
                     
                     let tag =""; //Per commento personalizzato
+                    if (Object.keys(db[key1]).length>=10){
+                      db[key1] = sortOnKeys(db[key1]);
+                    }
                       for(let key2 in db[key1]){  
                         if(tag==""){
                             tag = key2.slice(0, -1).toLowerCase(); //x SISTEMARE IL DISCORSO DEL CASO IN CUI CI FOSSERO 2 NUMERI FINALI

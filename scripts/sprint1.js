@@ -19,6 +19,7 @@ function correggi() {
     }else{
         greeting(false);
         
+        console.log(db.questionarioIntervista)
         addOutcome('JavelinBoard','jb', db.javelinBoard,"Javelin Board",false);
         addOutcome('BuyerPersona','bp', db.buyerPersona,"Buyer Personas",false);
         addOutcome('AccountStrategy','as', db.accountStrategy,"Account Strategy",false);

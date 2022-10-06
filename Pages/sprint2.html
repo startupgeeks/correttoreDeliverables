@@ -136,6 +136,9 @@
 
             if(nameSection!="Other"){
               let tag =""; //Per commento personalizzato
+              if (Object.keys(db[key1]).length>=10){
+                db[key1] = sortOnKeys(db[key1]);
+              }
               for(let key2 in db[key1]){  
                 console.log(key2)
                 if(tag==""){

@@ -29,4 +29,26 @@ function reload(){
 
   
     
+  function sortOnKeys(dict) {
+
+    let tempDict = {};
+    for(const [key, value] of Object.entries(dict)){
+      if(key.charAt(key.length - 2)>= '0' && key.charAt(key.length - 2)<= '9'){
+        //nulla SE è UN NUMERO Maggiore DI 10 il primo giro
+      }else{
+        tempDict[key]=value;
+      }
   
+    }
+  
+    for(const [key, value] of Object.entries(dict)){
+      if(key.charAt(key.length - 2)>= '0' && key.charAt(key.length - 2)<= '9'){
+        tempDict[key]=value;
+      }else{
+        //nulla SE è UN NUMERO Minore DI 10 il secondo giro
+      }
+  
+    }
+
+    return tempDict; 
+}
