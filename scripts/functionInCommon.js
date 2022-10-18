@@ -27,6 +27,12 @@ function reload(){
     } 
   }
 
+  function backToMenu(){
+    if (confirm("In questo modo perderai il feedback, sei sicuro?")) {
+      window.location.href = '../index.html';
+    } 
+  }
+
   
     
   function sortOnKeys(dict) {
