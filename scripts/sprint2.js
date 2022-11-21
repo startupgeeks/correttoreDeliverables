@@ -13,19 +13,17 @@ function correggi() {
         addOutcome('TamSamSom','ts', db.tamSamSom,"TAM SAM SOM",true);
         addOutcome('AnalisiCompetitors','ac', db.analisiCompetitors,"Analisi dei competitors",true);
         addOutcome('BenchmarkingCompetitors','bc', db.benchmarkingCompetitors,"Benchmarking dei competitors",true);
-        addOutcome('LeanCanvas1','lc', db.leanCanvas1,"Lean Canvas",true);
+        addOutcome('LeanCanvas','lc', db.leanCanvas,"Lean Canvas",true);
 
         endMessage(true);
     }else{
         greeting(false);
-        
+        console.log("Almeno arriva qui 1 ")
         addOutcome('GetOutOfTheBuilding','gb', db.getOutOfTheBuilding,"Get out of the building",false);
         addOutcome('TamSamSom','ts', db.tamSamSom,"TAM SAM SOM",false);
         addOutcome('AnalisiCompetitors','ac', db.analisiCompetitors,"Analisi dei competitors",false);
         addOutcome('BenchmarkingCompetitors','bc', db.benchmarkingCompetitors,"Benchmarking dei competitors",false);
-        addOutcome('LeanCanvas1','lc', db.leanCanvas1,"Lean Canvas",false);
-
-
+        addOutcome('LeanCanvas','lc', db.leanCanvas,"Lean Canvas",false);
 
         endMessage(false);
     }
@@ -102,7 +100,7 @@ function addOutcome(nameSection,idSection, listSection,title,isSingolare){
         document.getElementById("Commento_personalizzato_".concat(idSection.toLowerCase() )).innerHTML = document.getElementsByClassName("Commento_personalizzato_".concat(idSection.toLowerCase()))[0].value; 
     }
 
-    
+    console.log("Almeno arriva qui 2 ")
     
     for (let key in listSection) {
         //console.log(listSection);

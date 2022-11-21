@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../style.css">
   <script  src="../scripts/functionInCommon.js"></script>  
   <script  src="../scripts/sprint2_uploadDB.js"></script>  
-  <!-- ciao-->
+  
 <meta charset="UTF-8" />
 </head>
 <body>
@@ -16,6 +16,7 @@
     <form>
       <INPUT TYPE="button" VALUE="Menu" onClick="backToMenu()" class="btn" style="background-color: white; color: #094074;margin-left: 40px; float:right; clear:right;">
     </form>
+    
   </header>    
   <br><br>
   <div class="column">
@@ -77,7 +78,7 @@
             <h2 class="titoloDeliverable"> Benchmarking Competitors</h2>  
             <div id="benchmarkingCompetitorsInput"></div>
             <h2 class="titoloDeliverable"> Lean Canvas</h2>  
-            <div id="leanCanvas1Input"></div>  
+            <div id="leanCanvasInput"></div>  
             
             
             <!--
@@ -111,7 +112,6 @@
                     <td><input type="radio" name="valutazione" value="superGood"/><br></td>
                     <td style="vertical-align: top;"><span style="padding-left: 5%;">Ottimo </span></td>
                   </tr>
-                  
                 </table>
             </fieldset>
         <br> <br>
@@ -140,11 +140,14 @@
 
             if(nameSection!="Other"){
               let tag =""; //Per commento personalizzato
+              //console.log(sortOnKeys(db[key1]))
+              //let listCodici = db[key1]
               if (Object.keys(db[key1]).length>=10){
                 db[key1] = sortOnKeys(db[key1]);
               }
               for(let key2 in db[key1]){  
-                console.log(key2)
+                //console.log("la key2 qui è")
+                //console.log(key2)
                 if(tag==""){
                     tag = key2.slice(0, -1).toLowerCase(); //x SISTEMARE IL DISCORSO DEL CASO IN CUI CI FOSSERO 2 NUMERI FINALI
                 }
@@ -153,24 +156,28 @@
                 //console.log(key2.charAt(key2.length - 1));
     
                 //SE è UN NUMERO Maggiore DI 10
+                
+                
                 if(key2.charAt(key2.length - 2)>= '0' && key2.charAt(key2.length - 2)<= '9'){
                   //IN QUESTO CASO è MAGGIORE DI 10 (i.e., >10)
+                  console.log("Maggiore di 10")
                   console.log(nameSection+key2.slice(-2));
-                  //gal.innerHTML += '<div class="checkbox_container" data-namecomponent="'+nameSection+key2.slice(-2)+'" style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_'+key2.toUpperCase()+'""></span></label><br><br>';
-                   gal.innerHTML += '<input type="checkbox" style="float:left;" class="'+nameSection+key2.slice(-2)+'" id="'+nameSection+key2.slice(-2)+'" name="'+nameSection+key2.slice(-2)+'"/>';
-                   gal.innerHTML += '<label for="'+nameSection+key2.slice(-2)+'"> <span style="padding-left: 1%;" id="Input_'+key2.toUpperCase()+'""></span></label><br><br>';
+                  gal.innerHTML += '<input type="checkbox" style="float:left;" class="'+nameSection+key2.slice(-2)+'" id="'+nameSection+key2.slice(-2)+'" name="'+nameSection+key2.slice(-2)+'"/>';
+                  gal.innerHTML += '<label for="'+nameSection+key2.slice(-2)+'"> <span style="padding-left: 1%;" id="Input_'+key2.toUpperCase()+'""></span></label><br><br>';
+                   
                    //<input type="checkbox" class="JavelinBoard1" id="JavelinBoard1" name="JavelinBoard1"/>
                    //<label for="JavelinBoard1"> <span id="Input_JB1"></span></label><br>
                 }else{
                   //IN QUESTO CASO è MINORE DI 10 (i.e., <10)
+                  console.log("MINORE di 10")
                   console.log(nameSection+key2.charAt(key2.length - 1));
-                  //gal.innerHTML += '<div class="checkbox_container" data-namecomponent="'+nameSection+key2.charAt(key2.length - 1)+'" style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_'+key2.toUpperCase()+'""></span></label><br><br>';
+
                   gal.innerHTML += '<input type="checkbox" style="float:left;" class="'+nameSection+key2.charAt(key2.length - 1)+'" id="'+nameSection+key2.charAt(key2.length - 1)+'" name="'+nameSection+key2.charAt(key2.length - 1)+'"/>';
                   gal.innerHTML += '<label  for="'+nameSection+key2.charAt(key2.length - 1)+'"> <span style="padding-left: 1%;" id="Input_'+key2.toUpperCase()+'""></span></label><br><br>';
                 }
                 //gal.innerHTML += '<div class="checkbox_container" data-namecomponent="'+nameSection+key2.charAt(key2.length - 1)+'" style="float:left;"></div> <span style="padding-left: 1%;float:rigth;" id="Input_'+key2.toUpperCase()+'""></span></label><br><br>';
                 document.getElementById("Input_"+key2.toUpperCase()).innerHTML=db[key1][key2].input;
-               }
+              }
             //console.log("QUI:"+tag);
             gal.innerHTML += '<br><label for="Commento_personalizzato_'+tag.toLowerCase()+'">Ulteriore commento personalizzato su '+nameSection+'</label><br><textarea name="Commento_personalizzato_'+tag.toLowerCase()+'" name="Commento_personalizzato_'+tag.toLowerCase()+'" class="Commento_personalizzato_'+tag.toLowerCase()+'" cols="40" rows="5" style="border-width: medium ;border-color: #094074 red #094074 red;background-color: #d3fffedb;"></textarea>    '; 
 
@@ -186,7 +193,7 @@
                   cunterNumberOfElements = 0;
                   for(let key2 in db[key1]){
                       if( cunterNumberOfElements==0){
-                          tag = key2.slice(0, -1).toLowerCase(); //x SISTEMARE IL DISCORSO DEL CASO IN CUI CI FOSSERO 2 NUMERI FINALI
+                          tag = key2.slice(0, -1).toLowerCase(); //x SISTEMARE NEL CASO IN CUI CI FOSSERO 2 NUMERI FINALI
                         }
                       cunterNumberOfElements = cunterNumberOfElements +1;
                   }
@@ -197,6 +204,7 @@
             }  
         }
       )
+      
       
       
     </script>
