@@ -37,6 +37,7 @@ function correggi() {
 
 function greeting(isSingular) {
 
+
     if(isSingular){
         //document.getElementById("intro_pt1").innerHTML = "spero che il tuo percorso stia proseguendo alla grande, siamo nella fase centrale dello Startup Builder!";
         
@@ -56,7 +57,6 @@ function greeting(isSingular) {
         }
     }
 }
-
 
 function endMessage(isSingular) {
     //console.log("ARRIVA QUI")
@@ -127,7 +127,6 @@ function addOutcome(nameSection,idSection, listSection,title,isSingolare){
             document.getElementById("Title_".concat(idSection.toLowerCase())).innerHTML = title;
         }
     }
- 
 
 }
 

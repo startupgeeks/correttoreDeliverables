@@ -26,6 +26,7 @@ function correggi() {
         addOutcome('QuestionarioIntervista','iq', db.questionarioIntervista,"Questionario e Intervista",false);
         addOutcome('ColdMessage','cm', db.coldMessage,"Cold Message",false);
 
+        
 
         endMessage(false);
     }
